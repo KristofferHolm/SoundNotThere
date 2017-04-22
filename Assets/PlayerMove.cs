@@ -6,20 +6,18 @@ public class PlayerMove : MonoBehaviour {
 
     Rigidbody rig;
     Transform cam;
+    Vector3 moveDir;
     public float Speed;
     // Use this for initialization
     void Start () {
         cam = transform.GetChild(0);
         rig = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        rig.velocity += transform.right * Input.GetAxis("Horizontal") * Time.deltaTime * Speed;
-        rig.velocity += transform.forward * Input.GetAxis("Vertical") * Time.deltaTime * Speed;
-        rig.drag = rig.velocity.magnitude;
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
-            rig.velocity = Vector3.zero;
-        
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        moveDir = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
+        rig.velocity = moveDir * Time.deltaTime * Speed;
     }
 }
