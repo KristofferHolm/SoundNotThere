@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SoundHolder : MonoBehaviour {
 
-    public float highlightCD = 0f;
+    float highlightCD = 0f;
     public float HighLightLookAtSeconds = 0.1f;
     bool highLighted = false;
     Vector3 originScale;
-    public bool Spammable = false;
+    bool Spammable = false;
     bool ready2Play = true;
     float animationCD = 0;
     float animationTime = 1;
@@ -46,6 +46,17 @@ public class SoundHolder : MonoBehaviour {
             }
         }
         
+    }
+    public void Complete()
+    {
+        StartCoroutine(Animate());
+        StartCoroutine(LightUp());
+    }
+
+    private IEnumerator LightUp()
+    {
+
+        yield return null;
     }
 
     public void LookedAt()

@@ -28,7 +28,7 @@ public class SoundSwitch : MonoBehaviour {
                 if (Input.GetButtonDown("LeftClick"))
                     PlaySound(hit.transform.gameObject);
                 if (Input.GetButtonDown("RightClick"))
-                    SwitchSound();
+                    SwitchSound(hit.collider.gameObject);
             }
             else if (Input.GetButtonDown("RightClick"))
             {
@@ -48,9 +48,14 @@ public class SoundSwitch : MonoBehaviour {
        
     }
 
-    private void SwitchSound()
+    private void SwitchSound(GameObject go)
     {
-        print("Switch Sound");
+        //Startcoroutine()
+        string temp = SoundBit;
+        SoundBit = go.GetComponent<SoundHolder>().SoundBit;
+        go.GetComponent<SoundHolder>().SoundBit = temp;
+        if (go.GetComponent<SoundHolder>().SoundBit == go.name)
+            go.GetComponent<SoundHolder>().Complete();
     }
 
     private void PlaySound(GameObject go)
