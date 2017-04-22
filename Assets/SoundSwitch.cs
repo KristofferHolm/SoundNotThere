@@ -14,6 +14,7 @@ public class SoundSwitch : MonoBehaviour {
     public GameObject AudioSphere;
     public AnimationCurve AC;
     public Image horn;
+    soundBoard SB;
     PlayerMove movement;
     public Sprite Horn_0, Horn_1;
     float RightClickCD = 0;
@@ -21,6 +22,7 @@ public class SoundSwitch : MonoBehaviour {
 	void Start () {
         cam = GetComponent<Camera>();
         movement = transform.parent.GetComponent<PlayerMove>();
+        SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
     }
 	
 	// Update is called once per frame
@@ -70,9 +72,9 @@ public class SoundSwitch : MonoBehaviour {
         if (RightClickCD > 0)
             return;
         else
-            RightClickCD = 1.0f;
+            RightClickCD = SB.GetsSoundLength(SoundBit);
         AkSoundEngine.PostEvent(SoundBit, gameObject);
-        StartCoroutine(ChangeHorn(1.0f));
+        StartCoroutine(ChangeHorn(RightClickCD));
     }
     IEnumerator ChangeHorn(float time)
     {
@@ -83,7 +85,7 @@ public class SoundSwitch : MonoBehaviour {
     }
     private void SwitchSound(SoundHolder SH)
     {
-        if (RightClickCD > 0)
+        if (RightClickCD > 0 || SH.Completed)
             return;
         else
             RightClickCD = 2.0f;

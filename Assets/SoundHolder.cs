@@ -42,13 +42,16 @@ public class SoundHolder : MonoBehaviour {
     public void Complete()
     {
         ready2Play = false;
+        StartCoroutine(CompleteAnimation());
+        StartCoroutine(LightUp(1.0f, true));
+        Completed = true;
+        //tag = "Untagged";
+    }
+    private IEnumerator CompleteAnimation()
+    {
+        yield return new WaitForSeconds(5f); // 2 + 2 + 1 
         AkSoundEngine.PostEvent(SoundBit, gameObject);
         StartCoroutine(Animate());
-       
-        StartCoroutine(LightUp(1.0f,true));
-
-        Completed = true;
-        tag = "Untagged";
     }
 
     private IEnumerator LightUp(float target, bool overwrite)
@@ -114,8 +117,8 @@ public class SoundHolder : MonoBehaviour {
     }
     public void PlaySound()
     {
-        if (Completed)
-            return;
+      //  if (Completed)
+      //      return;
         if (Spammable)
         {
             
