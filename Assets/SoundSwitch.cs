@@ -10,6 +10,7 @@ public class SoundSwitch : MonoBehaviour {
     public float Range;
     public string SoundBit;
     public GameObject AudioSphere;
+    public AnimationCurve AC;
     float RightClickCD = 0;
 	// Use this for initialization
 	void Start () {
@@ -80,14 +81,14 @@ public class SoundSwitch : MonoBehaviour {
     {
         float t = 0;
         GameObject sphere = Instantiate<GameObject>(AudioSphere);
+        //sphere.transform.rotation = Quaternion.FromToRotation(from, to);
         //sphere.transform.position = from;
         AkSoundEngine.PostEvent(sound, sphere);
-        while (t < 1.5f)
+        while (t < 1f)
         {
-            t += Time.deltaTime;
-            sphere.transform.position = Vector3.Lerp(from, to, t);
+            t += Time.deltaTime / 2.0f; // så det tager 2 sekunder
+            sphere.transform.position = Vector3.Lerp(from, to, t/2f) + transform.right * AC.Evaluate(t); ;
             yield return null;
-
         }
         Destroy(sphere);
         yield return null;
