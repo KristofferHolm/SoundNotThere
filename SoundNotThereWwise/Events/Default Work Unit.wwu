@@ -3,12 +3,67 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Hund_Play" ID="{43299C67-35D2-47DE-A48B-128DDBEA9DE7}">
+				<Event Name="Hund" ID="{43299C67-35D2-47DE-A48B-128DDBEA9DE7}">
 					<ChildrenList>
 						<Action Name="Play" ID="{C5AA89BA-A24E-472B-875B-E941DF66A3D0}" ShortID="1028696533" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{6A5BA38F-45A9-43C8-8924-D19AC387513C}" Global="false">
 									<ObjectRef Name="Hund" ID="{08D6ACA4-7CC8-48B3-A575-7D176C4DDC56}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Blender" ID="{394D75AB-FAF2-4D8D-88C7-0C1C33AF4F3F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B11A1C6D-ACF1-4B26-BE01-64F0826C075B}" ShortID="774328711" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4A888444-67F0-4ECB-A45D-E7DB21B1AA6D}" Global="false">
+									<ObjectRef Name="Blender" ID="{8DABF46E-75A2-446B-B516-E725D3C4E68A}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Kat" ID="{77ABF53B-00FA-4FD0-AE34-94F95EC5EC44}">
+					<ChildrenList>
+						<Action Name="Play" ID="{41347E87-77B7-4844-91E0-EBDB59BA8E12}" ShortID="639645733" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0D4B4F00-28C1-4406-9956-A6FBB189E35E}" Global="false">
+									<ObjectRef Name="Kat" ID="{AD99B4AD-A850-4A28-8F34-E5441659009E}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Koleskab" ID="{0194709B-9FCB-44A0-858B-CC24C40BCD27}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6255EB2E-9B1A-406D-A429-FA57E8C0D97D}" ShortID="1016053307" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CDA93A0C-A2C3-4C2D-B982-0AD319A88A89}" Global="false">
+									<ObjectRef Name="Køleskab" ID="{30785565-9D83-4894-8E5C-CDFC800EFC9A}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mobiltelefon" ID="{F212DD65-C739-4021-A4EB-9BBD58D89C5E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{EA83CD29-DC31-436B-8CA6-54D950689BF3}" ShortID="774499315" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{164A0145-B3F3-45C0-B343-26E8B7F3E33D}" Global="false">
+									<ObjectRef Name="Mobiltelefon" ID="{005CD42E-854B-4AFC-A18E-0E9C03605C75}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Vakkeur" ID="{F72CEB7F-1563-49E8-920E-37A045D1FBF5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A11FE3FF-070E-4482-B084-BBDDB64A1FCE}" ShortID="742658603" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B04503F7-0370-4460-B969-B744F32CF11F}" Global="false">
+									<ObjectRef Name="Vækkeur" ID="{FDACEA1A-2F47-4881-B32E-6C02D62B8E60}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
 								</Element>
 							</ElementList>
 						</Action>
