@@ -9,7 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12364627	Vækkeur	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Vækkeur_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Vækkeur		75257
-	49405778	Køleskab	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Køleskab_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Køleskab		33533
+	49405778	Køleskab	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Køleskab_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Køleskab		31727
 	195343118	Blender	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Blender_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Blender		65178
 	332188677	Glimt	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Glimt_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Glimt		66396
 	348643319	Mobiltelefon	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Mobiltelefon_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Mobiltelefon		22232
