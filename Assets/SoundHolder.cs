@@ -12,7 +12,7 @@ public class SoundHolder : MonoBehaviour {
     bool ready2Play = true;
     float animationCD = 0;
     float EmissionAmount = 0;
-    float animationTime = 1;
+    public float animationTime = 1;
     [HideInInspector]
     public bool Completed = false;
     public string SoundBit;
