@@ -90,6 +90,7 @@ public class SoundSwitch : MonoBehaviour {
         else
             RightClickCD = 2.0f;
         StartCoroutine(ChangeHorn(2.0f));
+        AkSoundEngine.PostEvent("Swap", gameObject);
         //sphere from papfigur
         StartCoroutine(AnimateAudioSphere(SH.SoundBit,hit.transform.position,transform.position + transform.forward * 0.05f, -transform.right));
         //sphere from player
@@ -123,6 +124,8 @@ public class SoundSwitch : MonoBehaviour {
     }
     private void PlaySound(GameObject go)
     {
+        if (RightClickCD > 0)
+            return;
         go.GetComponent<SoundHolder>().PlaySound();
     }
 
