@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundHolder : MonoBehaviour {
 
     public float highlightCD = 0f;
-    public float HighLightLookAtSeconds = 1f;
+    public float HighLightLookAtSeconds = 0.1f;
     bool highLighted = false;
     Vector3 originScale;
     public bool Spammable = false;
@@ -22,6 +22,7 @@ public class SoundHolder : MonoBehaviour {
         originScale = transform.localScale;
         meshRend = GetComponent<MeshRenderer>();
         meshRend.materials[0] = MatMute;
+        meshFilt = GetComponent<MeshFilter>();
 	}
 	
 	// Update is called once per frame
@@ -79,7 +80,7 @@ public class SoundHolder : MonoBehaviour {
     }
     IEnumerator Animate()
     {
-        meshRend.materials[0] = MatSound;
+        meshRend.material = MatSound;
         meshFilt.mesh = MeshSound;
         
         Vector3 pos = transform.position;
@@ -91,7 +92,7 @@ public class SoundHolder : MonoBehaviour {
             yield return null;
         }
         transform.position = pos;
-        meshRend.materials[0] = MatMute;
+        meshRend.material = MatMute;
         meshFilt.mesh = MeshMute;
         ready2Play = true;
         yield return null;

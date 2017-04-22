@@ -19,6 +19,7 @@ public class SoundSwitch : MonoBehaviour {
 
         ray.direction = transform.forward * Range;
         ray.origin = transform.position;
+       
         if (Physics.Raycast(ray, out hit, Range))
         {
             if (hit.collider.tag == "PapFigur")
