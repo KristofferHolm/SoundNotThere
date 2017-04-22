@@ -24,11 +24,12 @@ public class SoundSwitch : MonoBehaviour {
         {
             if (hit.collider.tag == "PapFigur")
             {
+                print(hit.collider.tag);
                 hit.transform.GetComponent<SoundHolder>().LookedAt();
                 if (Input.GetButtonDown("LeftClick"))
                     PlaySound(hit.transform.gameObject);
                 if (Input.GetButtonDown("RightClick"))
-                    SwitchSound(hit.collider.gameObject);
+                    SwitchSound(hit.collider.GetComponent<SoundHolder>());
             }
             else if (Input.GetButtonDown("RightClick"))
             {
@@ -48,14 +49,16 @@ public class SoundSwitch : MonoBehaviour {
        
     }
 
-    private void SwitchSound(GameObject go)
+    private void SwitchSound(SoundHolder SH)
     {
-        //Startcoroutine()
+        
+        if (SH.Completed)
+            return;
         string temp = SoundBit;
-        SoundBit = go.GetComponent<SoundHolder>().SoundBit;
-        go.GetComponent<SoundHolder>().SoundBit = temp;
-        if (go.GetComponent<SoundHolder>().SoundBit == go.name)
-            go.GetComponent<SoundHolder>().Complete();
+        SoundBit = SH.SoundBit;
+        SH.SoundBit = temp;
+        if (SH.SoundBit == SH.name)
+            SH.Complete();
     }
 
     private void PlaySound(GameObject go)

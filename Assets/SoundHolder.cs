@@ -11,7 +11,10 @@ public class SoundHolder : MonoBehaviour {
     bool Spammable = false;
     bool ready2Play = true;
     float animationCD = 0;
+    float EmissionAmount = 0;
     float animationTime = 1;
+    [HideInInspector]
+    public bool Completed = false;
     public string SoundBit;
     public Material MatSound, MatMute;
     public Mesh MeshSound, MeshMute;
@@ -27,41 +30,66 @@ public class SoundHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (highlightCD > 0)
-        {
-            highlightCD -= Time.deltaTime;
-            if (highlightCD < 0)
-            {
-                highLighted = false;
-                RefreshHighlight();
-            }
+        if (highLighted && !Completed)
+        { 
+            highLighted = false;
+            RefreshHighlight();
         }
-        if (animationCD > 0)
-        {
-            animationCD -= Time.deltaTime;
-            if (animationCD < 0)
-            {
-                ready2Play = true;
-
-            }
-        }
-        
     }
     public void Complete()
     {
+        ready2Play = false;
+        AkSoundEngine.PostEvent(SoundBit, gameObject);
         StartCoroutine(Animate());
-        StartCoroutine(LightUp());
+        StartCoroutine(LightUp(1.0f,true));
+
+        Completed = true;
+        tag = "Untagged";
     }
 
-    private IEnumerator LightUp()
+    private IEnumerator LightUp(float target, bool overwrite)
     {
+        
+        float t = 0;
+        if(EmissionAmount < target)
+        {
+            while (EmissionAmount<target)
+            {
+                t += Time.deltaTime;
+                EmissionAmount += Time.deltaTime;
+                MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
+                MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+                if (t > 2f || Completed && !overwrite)
+                    break;
+                yield return null;
+            }
+                       
+        }
+        else
+        {
+            while (EmissionAmount > target)
+            {
+                t += Time.deltaTime;
+                EmissionAmount -= Time.deltaTime;
+                MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
+                MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+                if (t > 2f || Completed && !overwrite)
+                    break;
+                yield return null;
+            }
 
+        }
+        if(overwrite && EmissionAmount > 0) // FADE OUT EXTREME CAUTION !
+        {
+            StartCoroutine(LightUp(0.0f, true));
+        }
         yield return null;
     }
 
     public void LookedAt()
     {
-        highlightCD = HighLightLookAtSeconds;
+        if (Completed)
+            return;
         highLighted = true;
         RefreshHighlight();
     }
@@ -69,13 +97,15 @@ public class SoundHolder : MonoBehaviour {
     {
         //Insert Glow Effect
         if (highLighted)
-            transform.localScale = originScale * 1.10f;
+            StartCoroutine(LightUp(0.3f,false));
         else
-            transform.localScale = originScale;
+            StartCoroutine(LightUp(0.0f,false));
     }
     public void PlaySound()
     {
-        if(Spammable)
+        if (Completed)
+            return;
+        if (Spammable)
         {
             
         }
