@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundHolder : MonoBehaviour {
 
     float highlightCD = 0f;
-    public float HighLightLookAtSeconds = 0.1f;
+   // public float HighLightLookAtSeconds = 0.1f;
     bool highLighted = false;
     Vector3 originScale;
     bool Spammable = false;
