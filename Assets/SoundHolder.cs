@@ -8,6 +8,10 @@ public class SoundHolder : MonoBehaviour {
     public float HighLightLookAtSeconds = 1f;
     bool highLighted = false;
     Vector3 originScale;
+    public bool Spammable = true;
+    bool ready2Play = true;
+    float animationCD = 0;
+    float animationTime = 1;
     public string SoundBit;
 	// Use this for initialization
 	void Start () {
@@ -25,8 +29,15 @@ public class SoundHolder : MonoBehaviour {
                 RefreshHighlight();
             }
         }
-        
-	}
+        if (animationCD > 0)
+        {
+            animationCD -= Time.deltaTime;
+            if (animationCD < 0)
+            {
+                ready2Play = true;
+            }
+        }
+    }
 
     public void LookedAt()
     {
@@ -41,5 +52,27 @@ public class SoundHolder : MonoBehaviour {
             transform.localScale = originScale * 1.10f;
         else
             transform.localScale = originScale;
+    }
+    public void PlaySound()
+    {
+        if(Spammable)
+        {
+
+        }
+        else
+        {
+            if(ready2Play)
+            {
+                AkSoundEngine.PostEvent(SoundBit, gameObject);
+                StartCoroutine(Animate());
+            }
+        }
+    }
+    IEnumerator Animate()
+    {
+        //Shake & scale
+
+
+        yield return null;
     }
 }

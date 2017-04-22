@@ -25,25 +25,26 @@ public class SoundSwitch : MonoBehaviour {
             {
                 hit.transform.GetComponent<SoundHolder>().LookedAt();
                 if (Input.GetButtonDown("LeftClick"))
-                    PlaySound();
+                    PlaySound(hit.transform.gameObject);
                 if (Input.GetButtonDown("RightClick"))
                     SwitchSound();
             }
             else if (Input.GetButtonDown("RightClick"))
             {
-                ListenSound();
+                ListenInHand();
             }
         }
         else if (Input.GetButtonDown("RightClick"))
         {
-            ListenSound();
+            ListenInHand();
         }
 
     }
 
-    private void ListenSound()
+    private void ListenInHand()
     {
-        print("Listen Sound");
+        AkSoundEngine.PostEvent(SoundBit, gameObject);
+       
     }
 
     private void SwitchSound()
@@ -51,8 +52,8 @@ public class SoundSwitch : MonoBehaviour {
         print("Switch Sound");
     }
 
-    private void PlaySound()
+    private void PlaySound(GameObject go)
     {
-        print("PlaySound");
+        go.GetComponent<SoundHolder>().PlaySound();
     }
 }

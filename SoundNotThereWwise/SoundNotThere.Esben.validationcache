@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="75">
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4218458409" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1366490891" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1368950788" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Attenuations\Default Work Unit.wwu" DateLow="4218380349" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Audio Devices\Default Work Unit.wwu" DateLow="4218263411" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Control Surface Sessions\Default Work Unit.wwu" DateLow="4218222948" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Conversion Settings\Default Work Unit.wwu" DateLow="4218418491" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1366646026" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Dynamic Dialogue\Default Work Unit.wwu" DateLow="4218333993" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Effects\Default Work Unit.wwu" DateLow="4218716729" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1489733555" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Effects\Factory Effects.wwu" DateLow="1370331888" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Effects\Factory McDSP Effects.wwu" DateLow="1364626787" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Events\Default Work Unit.wwu" DateLow="4218535860" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Game Parameters\Default Work Unit.wwu" DateLow="4218681596" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1370071692" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4218293325" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4218571001" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Mixing Sessions\Default Work Unit.wwu" DateLow="4218177887" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Modulators\Default Work Unit.wwu" DateLow="4218137973" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Presets\Default Work Unit.wwu" DateLow="4218751776" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Queries\Default Work Unit.wwu" DateLow="4218495835" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Queries\Factory Queries.wwu" DateLow="1366535964" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundBanks\Default Work Unit.wwu" DateLow="4218822860" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4218792854" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThere.wproj" DateLow="4218037373" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1033372987" DateHigh="30587723"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1366490891" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1368950788" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Attenuations\Default Work Unit.wwu" DateLow="4218380349" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Audio Devices\Default Work Unit.wwu" DateLow="4218263411" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="4218222948" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Conversion Settings\Default Work Unit.wwu" DateLow="1033317863" DateHigh="30587723"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1366646026" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="4218333993" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Effects\Default Work Unit.wwu" DateLow="4218716729" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1489733555" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Effects\Factory Effects.wwu" DateLow="3738548927" DateHigh="30587722"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Effects\Factory McDSP Effects.wwu" DateLow="1364626787" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Events\Default Work Unit.wwu" DateLow="3973392697" DateHigh="30587722"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Game Parameters\Default Work Unit.wwu" DateLow="4218681596" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1370071692" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4218293325" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3738403929" DateHigh="30587722"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="4218177887" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Modulators\Default Work Unit.wwu" DateLow="4218137973" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Presets\Default Work Unit.wwu" DateLow="4218751776" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Queries\Default Work Unit.wwu" DateLow="4218495835" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Queries\Factory Queries.wwu" DateLow="1366535964" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\SoundBanks\Default Work Unit.wwu" DateLow="2596897961" DateHigh="30587723"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4218792854" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\SoundNotThere.Esben.wsettings" DateLow="3784240173" DateHigh="30587724"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\SoundNotThere.wproj" DateLow="2273747749" DateHigh="30587724"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\States\Default Work Unit.wwu" DateLow="4218646553" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Switches\Default Work Unit.wwu" DateLow="4218605909" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\Triggers\Default Work Unit.wwu" DateLow="4218097420" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\States\Default Work Unit.wwu" DateLow="4218646553" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Switches\Default Work Unit.wwu" DateLow="4218605909" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\Triggers\Default Work Unit.wwu" DateLow="4218097420" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1033372987" DateHigh="30587723"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1366490891" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1368950788" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Attenuations\Default Work Unit.wwu" DateLow="4218380349" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Audio Devices\Default Work Unit.wwu" DateLow="4218263411" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="4218222948" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Conversion Settings\Default Work Unit.wwu" DateLow="1033317863" DateHigh="30587723"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1366646026" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="4218333993" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Effects\Default Work Unit.wwu" DateLow="4218716729" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1489733555" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Effects\Factory Effects.wwu" DateLow="3738548927" DateHigh="30587722"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Effects\Factory McDSP Effects.wwu" DateLow="1364626787" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Events\Default Work Unit.wwu" DateLow="3973392697" DateHigh="30587722"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Game Parameters\Default Work Unit.wwu" DateLow="4218681596" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1370071692" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4218293325" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3738403929" DateHigh="30587722"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="4218177887" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Modulators\Default Work Unit.wwu" DateLow="4218137973" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Presets\Default Work Unit.wwu" DateLow="4218751776" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Queries\Default Work Unit.wwu" DateLow="4218495835" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Queries\Factory Queries.wwu" DateLow="1366535964" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\SoundBanks\Default Work Unit.wwu" DateLow="2596897961" DateHigh="30587723"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4218792854" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\SoundNotThere.Esben.wsettings" DateLow="44762467" DateHigh="30587724"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\SoundNotThere.wproj" DateLow="2273747749" DateHigh="30587724"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\States\Default Work Unit.wwu" DateLow="4218646553" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Switches\Default Work Unit.wwu" DateLow="4218605909" DateHigh="30587719"/>
+	<ValidationCacheItem File="E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\Triggers\Default Work Unit.wwu" DateLow="4218097420" DateHigh="30587719"/>
+</ValidationCache>
