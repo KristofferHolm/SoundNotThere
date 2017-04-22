@@ -19,6 +19,9 @@ namespace AK
         static const AkUniqueID KAT = 1250178355U;
         static const AkUniqueID KOLESKAB = 947300733U;
         static const AkUniqueID MOBILTELEFON = 2861994579U;
+        static const AkUniqueID MOTORSAV = 3917792242U;
+        static const AkUniqueID SWAP = 286100424U;
+        static const AkUniqueID UGLE = 1456535184U;
         static const AkUniqueID VAKKEUR = 1162899944U;
     } // namespace EVENTS
 
