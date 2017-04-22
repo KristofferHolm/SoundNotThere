@@ -9,6 +9,8 @@ public class SoundSwitch : MonoBehaviour {
     RaycastHit hit;
     public float Range;
     public string SoundBit;
+    public GameObject AudioSphere;
+    float RightClickCD = 0;
 	// Use this for initialization
 	void Start () {
 		
@@ -40,18 +42,31 @@ public class SoundSwitch : MonoBehaviour {
         {
             ListenInHand();
         }
-
+        if (RightClickCD > 0)
+            RightClickCD -= Time.deltaTime;
     }
 
     private void ListenInHand()
     {
+        if (RightClickCD > 0)
+            return;
+        else
+            RightClickCD = 1.0f;
         AkSoundEngine.PostEvent(SoundBit, gameObject);
        
     }
 
     private void SwitchSound(SoundHolder SH)
     {
-        
+        if (RightClickCD > 0)
+            return;
+        else
+            RightClickCD = 2.0f;
+
+        //sphere from papfigur
+        StartCoroutine(AnimateAudioSphere(SH.SoundBit,hit.point,transform.position));
+        //sphere from player
+        StartCoroutine(AnimateAudioSphere(SoundBit,transform.position, hit.point));
         if (SH.Completed)
             return;
         string temp = SoundBit;
@@ -59,6 +74,23 @@ public class SoundSwitch : MonoBehaviour {
         SH.SoundBit = temp;
         if (SH.SoundBit == SH.name)
             SH.Complete();
+    }
+
+    private IEnumerator AnimateAudioSphere(string sound, Vector3 from, Vector3 to)
+    {
+        float t = 0;
+        GameObject sphere = Instantiate<GameObject>(AudioSphere);
+        //sphere.transform.position = from;
+        AkSoundEngine.PostEvent(sound, sphere);
+        while (t < 1.5f)
+        {
+            t += Time.deltaTime;
+            sphere.transform.position = Vector3.Lerp(from, to, t);
+            yield return null;
+
+        }
+        Destroy(sphere);
+        yield return null;
     }
 
     private void PlaySound(GameObject go)
