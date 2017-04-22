@@ -30,7 +30,10 @@ public class SoundHolder : MonoBehaviour {
         meshFilt = GetComponent<MeshFilter>();
         SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
         animationTime = SB.GetsSoundLength(SoundBit);
-	}
+        EmissionAmount = 0;
+        MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
+        MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -46,13 +49,13 @@ public class SoundHolder : MonoBehaviour {
 
         if (!Completed)
         {
-            if (EmissionAmount < targetEmissionAmount)
+            if (Mathf.Abs(EmissionAmount - targetEmissionAmount) > 0.01f)
+            {
+                if (EmissionAmount < targetEmissionAmount)
                 EmissionAmount += Time.deltaTime;
             else if (EmissionAmount > targetEmissionAmount)
                 EmissionAmount -= Time.deltaTime;
 
-            if(Mathf.Abs(EmissionAmount - targetEmissionAmount) > 0.01f)
-            {
                 MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
                 MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
             }
