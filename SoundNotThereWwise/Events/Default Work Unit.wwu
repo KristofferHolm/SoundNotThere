@@ -80,6 +80,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Motorsav" ID="{CF4C44A9-4CD5-4224-8495-A6B44CF02EB5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{13140C66-0758-47DE-B1AF-8277E23D2EFC}" ShortID="722605142" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8A26F5E5-DF8E-4E16-8D02-2B2F3F1103F8}" Global="false">
+									<ObjectRef Name="Motorsav" ID="{0FE43916-098D-4615-A7EB-A2987DCF9CB7}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ugle" ID="{93F85755-28D0-495B-B74F-1F32B8A3DFD3}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8E7230F2-7323-4609-8F4A-09F0462ECD0F}" ShortID="347030038" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{67143E86-33E3-44A5-B460-F941E5874DB4}" Global="false">
+									<ObjectRef Name="Ugle" ID="{38C046DD-73A8-49AF-9E2F-994A1FDFF4B6}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
