@@ -11,6 +11,7 @@ public class SoundHolder : MonoBehaviour {
     bool Spammable = false;
     bool ready2Play = true;
     float animationCD = 0;
+    float targetEmissionAmount = 0;
     float EmissionAmount = 0;
     public float animationTime = 1;
     [HideInInspector]
@@ -33,18 +34,36 @@ public class SoundHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (highLighted && !Completed)
-        { 
-            highLighted = false;
-            RefreshHighlight();
+        if (highlightCD >= 0.0f)
+        {
+            highlightCD -= Time.deltaTime;
+            if(highlightCD< 0.0f)
+            {
+                highLighted = false;
+                RefreshHighlight();
+            }
+        }
+
+        if (!Completed)
+        {
+            if (EmissionAmount < targetEmissionAmount)
+                EmissionAmount += Time.deltaTime;
+            else if (EmissionAmount > targetEmissionAmount)
+                EmissionAmount -= Time.deltaTime;
+
+            if(Mathf.Abs(EmissionAmount - targetEmissionAmount) > 0.01f)
+            {
+                MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
+                MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+            }
         }
     }
     public void Complete()
     {
         ready2Play = false;
+        Completed = true;
         StartCoroutine(CompleteAnimation());
         StartCoroutine(LightUp(1.0f, true));
-        Completed = true;
         //tag = "Untagged";
     }
     private IEnumerator CompleteAnimation()
@@ -54,7 +73,7 @@ public class SoundHolder : MonoBehaviour {
         StartCoroutine(Animate());
     }
 
-    private IEnumerator LightUp(float target, bool overwrite)
+    private IEnumerator LightUp(float target, bool overwrite) // kun til Complete();
     {
         if (overwrite && target == 1.0f)
         {
@@ -105,15 +124,18 @@ public class SoundHolder : MonoBehaviour {
         if (Completed)
             return;
         highLighted = true;
+        highlightCD = 0.1f;
         RefreshHighlight();
+
+
     }
     void RefreshHighlight()
     {
         //Insert Glow Effect
         if (highLighted)
-            StartCoroutine(LightUp(0.3f,false));
+            targetEmissionAmount = 0.3f;
         else
-            StartCoroutine(LightUp(0.0f,false));
+            targetEmissionAmount = 0.0f;
     }
     public void PlaySound()
     {
