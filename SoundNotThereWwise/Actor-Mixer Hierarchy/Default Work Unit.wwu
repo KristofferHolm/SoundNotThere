@@ -288,14 +288,56 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{7103C1BD-0BFD-4FE6-B60A-05B6B4F1FDCD}" ShortID="220740000">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Main" ID="{ECA0DB4B-F77E-4154-991C-99815E0AC734}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+							<ObjectRef Name="UI" ID="{1C16E0DA-A9BF-40DF-8AB9-F4B3751D3FF6}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Swap" ID="{A02C0EEC-DBFA-4AC5-BDC6-1186B1A10E37}" ShortID="84112073" Type="SoundFX">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Papfigur" ID="{D35446A7-D48F-49E8-B67F-989F2AE2E09F}" WorkUnitID="{E45397DD-8889-404B-BE97-CE5182E7A0C7}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Main" ID="{ECA0DB4B-F77E-4154-991C-99815E0AC734}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{86E9AB2C-D146-474B-A323-7BF8DF5C96C8}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Swap" ID="{B6C9C5CB-3CC6-4188-92B7-7C74F3773C92}" ShortID="412899284">
+									<Language>SFX</Language>
+									<AudioFile>Swap.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Swap" ID="{B6C9C5CB-3CC6-4188-92B7-7C74F3773C92}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

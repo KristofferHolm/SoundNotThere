@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{7B7D450C-90A6-40F1-BB75-AE58FD6CA389}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Home\Game Jam\Nordic Game Jam 2017\Køleskab\Bounced Files"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Home\Game Jam\Nordic Game Jam 2017\Swap\Bounced Files"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
@@ -28,7 +28,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
-				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AQAAAAIAAABA9////////wAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAgMvxDQAAAAAAAAAAAAAAAAEAAAAAAAAAmBs3AAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABXamim+X8AAAAAAAD/////CAAAAAAAAAAeHsu1+X8AAAAAAAAAAAAA//////////8BGYhm+X8AAAAAAAAAAAAAAAAAAAAAAAAGAENhbWVyYQAu2A0AAAAAoONBAAAAAAAAAAAAAAAAAKDjQQAAAAAAL2amZvl/AACQLtgNAAAAALgYiGb5fwAAAgAAAAAAAAAAAFiAAQAAALDlaA0AAAAAXaaVAAAAAAACAAAAAAAAAAIAAAAAAAAAsOVoDQAAAAAAAAAAAAAAABAAAAAAAAAAASQVgAEAAAA="/>
+				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AQAAAAIAAABA9////////wAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAgMvxDQAAAAAAAAAAAAAAAAEAAAAAAAAAmBs3AAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABXamim+X8AAAAAAAD/////CAAAAAAAAAAeHsu1+X8AAAAAAAAAAAAA//////////8BGYhm+X8AAAAAAAAAAAAAAAAAAAAAAAAGAENhbWVyYQDA2Q0AAAAA4OBVAAAAAAAAAAAAAAAAAODgVQAAAAAAL2aqefl/AADYwNkNAAAAALgYjHn5fwAAAgAAAAAAAAAAAFiAAQAAAJBDVw0AAAAAXaaWAAAAAAACAAAAAAAAAAIAAAAAAAAAkENXDQAAAAAAAAAAAAAAABAAAAAAAAAAASQVgAEAAAA="/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
@@ -50,7 +50,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_17_1" Type="string" Value="ME83JLMgukin7T/SnVQNAQ=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_18_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="sJQjxw3J00C2jazqBBIHdtikFBWmHSpBoX51ygwhSfPXr2cg7b5tS7v46WNNxdRpFsLGVndvvUu4bLsEXqkePA=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value="sJQjxw3J00C2jazqBBIHdtikFBWmHSpBoX51ygwhSfPXr2cg7b5tS7v46WNNxdRp"/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="BT3egkq62kKSNEBq6ncdqkUtvNY9dipPgdERLh+6tCy9wQNx/QvmT7YKBba08f3N"/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value=""/>
