@@ -19,6 +19,7 @@ public class SoundHolder : MonoBehaviour {
     public Material MatSound, MatMute;
     public Mesh MeshSound, MeshMute;
     MeshFilter meshFilt;
+    soundBoard SB;
     MeshRenderer meshRend;
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,8 @@ public class SoundHolder : MonoBehaviour {
         meshRend = GetComponent<MeshRenderer>();
         meshRend.materials[0] = MatMute;
         meshFilt = GetComponent<MeshFilter>();
+        SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
+        animationTime = SB.GetsSoundLength(SoundBit);
 	}
 	
 	// Update is called once per frame
@@ -133,7 +136,7 @@ public class SoundHolder : MonoBehaviour {
         meshFilt.mesh = MeshSound;
         
         Vector3 pos = transform.position;
-        float t = animationTime;
+        float t = SB.GetsSoundLength(SoundBit);
         while(t>0)
         { // SHAKE
             transform.position = pos + Time.deltaTime * Random.insideUnitSphere;
@@ -146,4 +149,5 @@ public class SoundHolder : MonoBehaviour {
         ready2Play = true;
         yield return null;
     }
+ 
 }

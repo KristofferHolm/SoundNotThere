@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,23 +8,39 @@ public class SoundSwitch : MonoBehaviour {
     Ray ray;
     RaycastHit hit;
     public float Range;
+    Camera cam;
+    bool pickedUpHorn = false;
     public string SoundBit;
     public GameObject AudioSphere;
     public AnimationCurve AC;
     public Image horn;
+    PlayerMove movement;
     public Sprite Horn_0, Horn_1;
     float RightClickCD = 0;
 	// Use this for initialization
 	void Start () {
-     
-	}
+        cam = GetComponent<Camera>();
+        movement = transform.parent.GetComponent<PlayerMove>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
         ray.direction = transform.forward * Range;
         ray.origin = transform.position;
-       
+        if(!pickedUpHorn)
+        {
+            if (Physics.Raycast(ray, out hit, Range))
+            {
+                if (hit.collider.tag == "Horn")
+                {
+                    hit.transform.GetComponent<SoundHolder>().LookedAt();
+                    if (Input.GetButtonDown("LeftClick"))
+                        PickHorn(hit.transform.gameObject);
+                }
+            }
+            return;
+        }
         if (Physics.Raycast(ray, out hit, Range))
         {
             if (hit.collider.tag == "PapFigur")
@@ -90,20 +105,29 @@ public class SoundSwitch : MonoBehaviour {
     {
         float t = 0;
         GameObject sphere = Instantiate<GameObject>(AudioSphere);
-       
+        movement.pickedUpHorn = false; // TO LOCK THE MOVEMENT
         AkSoundEngine.PostEvent(sound, sphere);
         while (t < 1f)
         {
+            
             t += Time.deltaTime / 2.0f; // så det tager 2 sekunder
+            cam.fieldOfView = 60 + AC.Evaluate(t) * 50; // 60 fov er standard
             sphere.transform.position = Vector3.Lerp(from, to, t) + turn * AC.Evaluate(t); ;
             yield return null;
         }
+        movement.pickedUpHorn = true;
         Destroy(sphere);
         yield return null;
     }
-
     private void PlaySound(GameObject go)
     {
         go.GetComponent<SoundHolder>().PlaySound();
+    }
+
+    private void PickHorn(GameObject go)
+    {
+        movement.PickUpHorn();
+        Destroy(go);
+        pickedUpHorn = true;
     }
 }
