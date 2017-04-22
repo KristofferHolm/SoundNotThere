@@ -41,6 +41,7 @@ public class SoundHolder : MonoBehaviour {
         ready2Play = false;
         AkSoundEngine.PostEvent(SoundBit, gameObject);
         StartCoroutine(Animate());
+       
         StartCoroutine(LightUp(1.0f,true));
 
         Completed = true;
@@ -49,7 +50,13 @@ public class SoundHolder : MonoBehaviour {
 
     private IEnumerator LightUp(float target, bool overwrite)
     {
-        
+        if (overwrite && target == 1.0f)
+        {
+            yield return new WaitForSeconds(2f);
+            AkSoundEngine.PostEvent("Glimt", gameObject);
+        }
+        else if (overwrite && target == 0.0f)
+            yield return new WaitForSeconds(1.0f);
         float t = 0;
         if(EmissionAmount < target)
         {
@@ -81,6 +88,7 @@ public class SoundHolder : MonoBehaviour {
         }
         if(overwrite && EmissionAmount > 0) // FADE OUT EXTREME CAUTION !
         {
+          
             StartCoroutine(LightUp(0.0f, true));
         }
         yield return null;

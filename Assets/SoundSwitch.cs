@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundSwitch : MonoBehaviour {
 
@@ -11,10 +12,12 @@ public class SoundSwitch : MonoBehaviour {
     public string SoundBit;
     public GameObject AudioSphere;
     public AnimationCurve AC;
+    public Image horn;
+    public Sprite Horn_0, Horn_1;
     float RightClickCD = 0;
 	// Use this for initialization
 	void Start () {
-		
+     
 	}
 	
 	// Update is called once per frame
@@ -54,20 +57,26 @@ public class SoundSwitch : MonoBehaviour {
         else
             RightClickCD = 1.0f;
         AkSoundEngine.PostEvent(SoundBit, gameObject);
-       
+        StartCoroutine(ChangeHorn(1.0f));
     }
-
+    IEnumerator ChangeHorn(float time)
+    {
+        horn.sprite = Horn_1;
+        yield return new WaitForSeconds(time);
+        horn.sprite = Horn_0;
+        yield return null;
+    }
     private void SwitchSound(SoundHolder SH)
     {
         if (RightClickCD > 0)
             return;
         else
             RightClickCD = 2.0f;
-
+        StartCoroutine(ChangeHorn(2.0f));
         //sphere from papfigur
-        StartCoroutine(AnimateAudioSphere(SH.SoundBit,hit.point,transform.position));
+        StartCoroutine(AnimateAudioSphere(SH.SoundBit,hit.transform.position,transform.position + transform.forward * 0.05f, -transform.right));
         //sphere from player
-        StartCoroutine(AnimateAudioSphere(SoundBit,transform.position, hit.point));
+        StartCoroutine(AnimateAudioSphere(SoundBit,transform.position+ transform.forward*0.05f, hit.transform.position, transform.right));
         if (SH.Completed)
             return;
         string temp = SoundBit;
@@ -77,17 +86,16 @@ public class SoundSwitch : MonoBehaviour {
             SH.Complete();
     }
 
-    private IEnumerator AnimateAudioSphere(string sound, Vector3 from, Vector3 to)
+    private IEnumerator AnimateAudioSphere(string sound, Vector3 from, Vector3 to, Vector3 turn)
     {
         float t = 0;
         GameObject sphere = Instantiate<GameObject>(AudioSphere);
-        //sphere.transform.rotation = Quaternion.FromToRotation(from, to);
-        //sphere.transform.position = from;
+       
         AkSoundEngine.PostEvent(sound, sphere);
         while (t < 1f)
         {
             t += Time.deltaTime / 2.0f; // så det tager 2 sekunder
-            sphere.transform.position = Vector3.Lerp(from, to, t/2f) + transform.right * AC.Evaluate(t); ;
+            sphere.transform.position = Vector3.Lerp(from, to, t) + turn * AC.Evaluate(t); ;
             yield return null;
         }
         Destroy(sphere);
