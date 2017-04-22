@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2995323759	Hund_Play			\Default Work Unit\Hund_Play	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	697225523	Hund	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThereWwise\.cache\Mac\SFX\Hund_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Hund		14851
+
