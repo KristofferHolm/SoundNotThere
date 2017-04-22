@@ -8,14 +8,20 @@ public class SoundHolder : MonoBehaviour {
     public float HighLightLookAtSeconds = 1f;
     bool highLighted = false;
     Vector3 originScale;
-    public bool Spammable = true;
+    public bool Spammable = false;
     bool ready2Play = true;
     float animationCD = 0;
     float animationTime = 1;
     public string SoundBit;
+    public Material MatSound, MatMute;
+    public Mesh MeshSound, MeshMute;
+    MeshFilter meshFilt;
+    MeshRenderer meshRend;
 	// Use this for initialization
 	void Start () {
         originScale = transform.localScale;
+        meshRend = GetComponent<MeshRenderer>();
+        meshRend.materials[0] = MatMute;
 	}
 	
 	// Update is called once per frame
@@ -35,8 +41,10 @@ public class SoundHolder : MonoBehaviour {
             if (animationCD < 0)
             {
                 ready2Play = true;
+
             }
         }
+        
     }
 
     public void LookedAt()
@@ -57,12 +65,13 @@ public class SoundHolder : MonoBehaviour {
     {
         if(Spammable)
         {
-
+            
         }
         else
         {
             if(ready2Play)
             {
+                ready2Play = false;
                 AkSoundEngine.PostEvent(SoundBit, gameObject);
                 StartCoroutine(Animate());
             }
@@ -70,9 +79,21 @@ public class SoundHolder : MonoBehaviour {
     }
     IEnumerator Animate()
     {
-        //Shake & scale
-
-
+        meshRend.materials[0] = MatSound;
+        meshFilt.mesh = MeshSound;
+        
+        Vector3 pos = transform.position;
+        float t = animationTime;
+        while(t>0)
+        { // SHAKE
+            transform.position = pos + Time.deltaTime * Random.insideUnitSphere;
+            t -= Time.deltaTime;
+            yield return null;
+        }
+        transform.position = pos;
+        meshRend.materials[0] = MatMute;
+        meshFilt.mesh = MeshMute;
+        ready2Play = true;
         yield return null;
     }
 }
