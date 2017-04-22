@@ -22,6 +22,7 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3610450331" Name="Blender" ObjectPath="\Events\Default Work Unit\Blender" MaxAttenuation="16.000000"/>
+				<Event Id="2817797090" Name="Glimt" ObjectPath="\Events\Default Work Unit\Glimt" MaxAttenuation="16.000000"/>
 				<Event Id="3126836846" Name="Hund" ObjectPath="\Events\Default Work Unit\Hund" MaxAttenuation="16.000000"/>
 				<Event Id="1250178355" Name="Kat" ObjectPath="\Events\Default Work Unit\Kat" MaxAttenuation="16.000000"/>
 				<Event Id="947300733" Name="Koleskab" ObjectPath="\Events\Default Work Unit\Koleskab" MaxAttenuation="16.000000"/>
@@ -40,6 +41,10 @@
 				<File Id="195343118" Language="SFX">
 					<ShortName>Blender.wav</ShortName>
 					<Path>SFX\Blender_3ADACB5C.wem</Path>
+				</File>
+				<File Id="332188677" Language="SFX">
+					<ShortName>Glimt.wav</ShortName>
+					<Path>SFX\Glimt_3ADACB5C.wem</Path>
 				</File>
 				<File Id="348643319" Language="SFX">
 					<ShortName>Mobiltelefon.wav</ShortName>

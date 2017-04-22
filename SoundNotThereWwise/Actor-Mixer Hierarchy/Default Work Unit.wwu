@@ -199,7 +199,39 @@
 								<ActiveSource Name="Vækkeur" ID="{2292DBBE-598A-4DF4-9ED0-569856B28C96}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Glimt" ID="{E60589B5-C634-4BAC-8A3E-B21EDDE5D0DA}" ShortID="220860616" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Main" ID="{ECA0DB4B-F77E-4154-991C-99815E0AC734}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Lejlighed" ID="{2E0D33D8-4707-4590-9A55-B2CA747E1D96}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Glimt" ID="{5625567B-F9A9-4C5D-9F7D-E72B221BAA8E}" ShortID="332188677">
+									<Language>SFX</Language>
+									<AudioFile>Glimt.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Glimt" ID="{5625567B-F9A9-4C5D-9F7D-E72B221BAA8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="UI" ID="{7103C1BD-0BFD-4FE6-B60A-05B6B4F1FDCD}" ShortID="220740000">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Main" ID="{ECA0DB4B-F77E-4154-991C-99815E0AC734}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+						</Reference>
+					</ReferenceList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
