@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BLENDER = 3610450331U;
+        static const AkUniqueID GLIMT = 2817797090U;
         static const AkUniqueID HUND = 3126836846U;
         static const AkUniqueID KAT = 1250178355U;
         static const AkUniqueID KOLESKAB = 947300733U;
