@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 45f55e48ab627b742ad06aa2e4626fe4
-timeCreated: 1492863597
+guid: ee37a29fb43ad5242a3fec98a035cdad
+timeCreated: 1492866243
 licenseType: Free
 PluginImporter:
   serializedVersion: 2
@@ -19,7 +19,7 @@ PluginImporter:
       first:
         Editor: Editor
       second:
-        enabled: 0
+        enabled: 1
         settings:
           CPU: X86_64
           DefaultValueInitialized: true
@@ -91,7 +91,7 @@ PluginImporter:
       first:
         Standalone: Win64
       second:
-        enabled: 0
+        enabled: 1
         settings:
           CPU: AnyCPU
   userData: 

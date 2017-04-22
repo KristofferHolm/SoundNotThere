@@ -13,7 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID HUND_PLAY = 2995323759U;
+        static const AkUniqueID BLENDER = 3610450331U;
+        static const AkUniqueID HUND = 3126836846U;
+        static const AkUniqueID KAT = 1250178355U;
+        static const AkUniqueID KOLESKAB = 947300733U;
+        static const AkUniqueID MOBILTELEFON = 2861994579U;
+        static const AkUniqueID VAKKEUR = 1162899944U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -50,6 +55,8 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID LEJLIGHED = 1631958101U;
+        static const AkUniqueID SKOV = 788737504U;
+        static const AkUniqueID STRAND = 3522109173U;
     } // namespace AUX_BUSSES
 
 }// namespace AK

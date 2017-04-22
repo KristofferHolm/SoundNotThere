@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{7B7D450C-90A6-40F1-BB75-AE58FD6CA389}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Home\Game Jam\Nordic Game Jam 2017\Hund\Bounced Files"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Home\Game Jam\Nordic Game Jam 2017\Vækkeur\Bounced Files"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
