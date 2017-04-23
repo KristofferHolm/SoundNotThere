@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class SoundManager : MonoBehaviour {
 
     public float minWait, maxWait;
@@ -17,6 +17,7 @@ public class SoundManager : MonoBehaviour {
         Doren.SetActive(false);
         ListOfGO = new List<GameObject>();
         ListOfGO.AddRange(GameObject.FindGameObjectsWithTag("PapFigur"));
+        Cursor.visible = false;
     }
 	// Update is called once per frame
 	void Update () {
