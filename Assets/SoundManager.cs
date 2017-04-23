@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        Doren = GameObject.Find("DorenRamme");
+        Doren = GameObject.Find("Dor");
         Doren.SetActive(false);
         ListOfGO = new List<GameObject>();
         ListOfGO.AddRange(GameObject.FindGameObjectsWithTag("PapFigur"));
@@ -50,7 +50,6 @@ public class SoundManager : MonoBehaviour {
     public void EndGameScenario()
     {
         Doren.SetActive(true);
-        AkSoundEngine.PostEvent("Banke",Doren);
+        Doren.GetComponent<SoundHolder>().Banken();
     }
-
 }

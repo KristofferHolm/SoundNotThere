@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SoundHolder : MonoBehaviour {
 
@@ -17,13 +18,17 @@ public class SoundHolder : MonoBehaviour {
     [HideInInspector]
     public bool Completed = false;
     public string SoundBit;
+    
     public Material MatSound, MatMute;
     public Mesh MeshSound, MeshMute;
     MeshFilter meshFilt;
     soundBoard SB;
     MeshRenderer meshRend;
+    bool DOREN = false;
 	// Use this for initialization
 	void Start () {
+        if (gameObject.name == "Dor")
+            DOREN = true;
         originScale = transform.localScale;
         meshRend = GetComponent<MeshRenderer>();
         meshRend.materials[matINT] = MatMute;
@@ -34,7 +39,6 @@ public class SoundHolder : MonoBehaviour {
         MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
         MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
     }
-	
 	// Update is called once per frame
 	void Update () {
         if (highlightCD >= 0.0f)
@@ -63,12 +67,51 @@ public class SoundHolder : MonoBehaviour {
     }
     public void Complete()
     {
+        if(DOREN)
+        {
+            Completed = true;
+            StartCoroutine(LightUp(1.0f, true));
+            StartCoroutine(OpenDoor());
+        }
         ready2Play = false;
         Completed = true;
         StartCoroutine(CompleteAnimation());
         StartCoroutine(LightUp(1.0f, true));
         //tag = "Untagged";
     }
+
+    private IEnumerator OpenDoor()
+    {
+        yield return new WaitForSeconds(2f);
+        AkSoundEngine.PostEvent("Dor", gameObject);
+        Quaternion startRot = transform.GetChild(1).localRotation;
+        Quaternion endRot = transform.GetChild(1).localRotation * Quaternion.AngleAxis(-135,Vector3.up);
+        float t = 0;
+        while(t<1)
+        {
+            t += Time.deltaTime / 2.5f;
+            transform.GetChild(1).localRotation = Quaternion.Slerp(startRot, endRot, t);
+            yield return null;
+        }
+        yield return new WaitForSeconds(1.0f);
+        t = 0;
+        Image fadeOut = GameObject.Find("FadeOut").GetComponent<Image>();
+        Color col = Color.white;
+        col.a = 0;
+        while (t<1)
+        {
+            t += Time.deltaTime;
+            col.a = t;
+            fadeOut.color = col;
+            yield return null;
+        }
+        AkSoundEngine.PostEvent("Horn", gameObject);
+        Image TheEnd = GameObject.Find("TheEnd").GetComponent<Image>();
+        TheEnd.enabled = true;
+        yield return new WaitForSeconds(2f);
+        Application.Quit();
+    }
+
     private IEnumerator CompleteAnimation()
     {
         yield return new WaitForSeconds(5f); // 2 + 2 + 1 
@@ -160,11 +203,14 @@ public class SoundHolder : MonoBehaviour {
         
         Vector3 pos = transform.position;
         float t = SB.GetsSoundLength(SoundBit);
-        while(t>0)
-        { // SHAKE
-            transform.position = pos + Time.deltaTime * Random.insideUnitSphere;
-            t -= Time.deltaTime;
-            yield return null;
+        if(!DOREN)
+        {
+            while(t>0)
+            { // SHAKE
+                transform.position = pos + Time.deltaTime * Random.insideUnitSphere;
+                t -= Time.deltaTime;
+                yield return null;
+            }
         }
         transform.position = pos;
         mat[matINT] = MatMute;
@@ -173,5 +219,21 @@ public class SoundHolder : MonoBehaviour {
         ready2Play = true;
         yield return null;
     }
- 
+    public void Banken()
+    {
+        StartCoroutine(BankeBanke());
+    }
+
+    private IEnumerator BankeBanke()
+    {
+        if (Completed)
+            yield break;
+        else
+        {
+            AkSoundEngine.PostEvent("Banken", gameObject);
+            yield return new WaitForSeconds(Random.Range(3, 6));
+            StartCoroutine(BankeBanke());
+            yield return null;
+        }
+    }
 }
