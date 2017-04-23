@@ -18,8 +18,11 @@ public class SoundSwitch : MonoBehaviour {
     PlayerMove movement;
     public Sprite Horn_0, Horn_1;
     float RightClickCD = 0;
+    LayerMask layerMask;
 	// Use this for initialization
 	void Start () {
+        layerMask = LayerMask.NameToLayer("Interactable");
+        layerMask = ~layerMask;
         cam = GetComponent<Camera>();
         movement = transform.parent.GetComponent<PlayerMove>();
         SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
@@ -32,8 +35,9 @@ public class SoundSwitch : MonoBehaviour {
         ray.origin = transform.position;
         if(!pickedUpHorn)
         {
-            if (Physics.Raycast(ray, out hit, Range))
+            if (Physics.Raycast(ray, out hit, Range,layerMask))
             {
+                
                 if (hit.collider.tag == "Horn")
                 {
                     hit.transform.GetComponent<SoundHolder>().LookedAt();
@@ -43,11 +47,10 @@ public class SoundSwitch : MonoBehaviour {
             }
             return;
         }
-        if (Physics.Raycast(ray, out hit, Range))
+        if (Physics.Raycast(ray, out hit, Range, layerMask))
         {
             if (hit.collider.tag == "PapFigur")
             {
-                print(hit.collider.tag);
                 hit.transform.GetComponent<SoundHolder>().LookedAt();
                 if (Input.GetButtonDown("LeftClick"))
                     PlaySound(hit.transform.gameObject);

@@ -32,7 +32,10 @@ public class PlayerMove : MonoBehaviour {
     void FixedUpdate()
     {
         if (!pickedUpHorn)
+        {
+            rig.velocity = Vector3.zero;
             return;
+        }
         moveDir = transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical");
         rig.velocity = moveDir * Time.deltaTime * Speed;
 
