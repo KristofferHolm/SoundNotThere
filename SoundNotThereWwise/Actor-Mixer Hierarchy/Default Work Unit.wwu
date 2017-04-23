@@ -337,6 +337,33 @@
 								<ActiveSource Name="Swap" ID="{B6C9C5CB-3CC6-4188-92B7-7C74F3773C92}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="BGM" ID="{23D2014E-1966-4360-9715-7B492ABA3BCA}" ShortID="988778220" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="BGM" ID="{121986EA-D2AD-4F4D-8CF2-6AD0D8D384FA}" ShortID="74593294">
+									<Language>SFX</Language>
+									<AudioFile>BGM.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="BGM" ID="{121986EA-D2AD-4F4D-8CF2-6AD0D8D384FA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
