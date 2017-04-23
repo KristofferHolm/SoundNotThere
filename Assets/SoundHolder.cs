@@ -8,12 +8,12 @@ public class SoundHolder : MonoBehaviour {
    // public float HighLightLookAtSeconds = 0.1f;
     bool highLighted = false;
     Vector3 originScale;
-    bool Spammable = false;
     bool ready2Play = true;
     float animationCD = 0;
     float targetEmissionAmount = 0;
     float EmissionAmount = 0;
     public float animationTime = 1;
+    public int matINT = 0;
     [HideInInspector]
     public bool Completed = false;
     public string SoundBit;
@@ -26,7 +26,7 @@ public class SoundHolder : MonoBehaviour {
 	void Start () {
         originScale = transform.localScale;
         meshRend = GetComponent<MeshRenderer>();
-        meshRend.materials[0] = MatMute;
+        meshRend.materials[matINT] = MatMute;
         meshFilt = GetComponent<MeshFilter>();
         SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
         animationTime = SB.GetsSoundLength(SoundBit);
@@ -143,23 +143,19 @@ public class SoundHolder : MonoBehaviour {
     {
       //  if (Completed)
       //      return;
-        if (Spammable)
+        
+        if(ready2Play)
         {
-            
-        }
-        else
-        {
-            if(ready2Play)
-            {
-                ready2Play = false;
-                AkSoundEngine.PostEvent(SoundBit, gameObject);
-                StartCoroutine(Animate());
-            }
+            ready2Play = false;
+            AkSoundEngine.PostEvent(SoundBit, gameObject);
+            StartCoroutine(Animate());
         }
     }
     IEnumerator Animate()
     {
-        meshRend.material = MatSound;
+        Material[] mat = meshRend.materials;
+        mat[matINT] = MatSound;
+        meshRend.materials = mat;
         meshFilt.mesh = MeshSound;
         
         Vector3 pos = transform.position;
@@ -171,7 +167,8 @@ public class SoundHolder : MonoBehaviour {
             yield return null;
         }
         transform.position = pos;
-        meshRend.material = MatMute;
+        mat[matINT] = MatMute;
+        meshRend.materials = mat;
         meshFilt.mesh = MeshMute;
         ready2Play = true;
         yield return null;
