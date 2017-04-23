@@ -18,7 +18,6 @@
 						</Property>
 						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -44,6 +43,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX" ID="{86E9AB2C-D146-474B-A323-7BF8DF5C96C8}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Lejlighed" ID="{2E0D33D8-4707-4590-9A55-B2CA747E1D96}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -256,6 +258,11 @@
 						</Sound>
 						<Sound Name="Ugle" ID="{38C046DD-73A8-49AF-9E2F-994A1FDFF4B6}" ShortID="262497698" Type="SoundFX">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-180</Value>
@@ -263,7 +270,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>6</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -311,6 +318,64 @@
 								<ActiveSource Name="Frø" ID="{7B0B7C8D-2470-4FBB-8D9D-FA57A7E067DD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Banken" ID="{D408FF22-4E92-4F05-A2A7-6D3B9EDAB892}" ShortID="583566377" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Banken" ID="{37642D60-6D7B-43E4-A29B-3B8DEB7369C5}" ShortID="755152698">
+									<Language>SFX</Language>
+									<AudioFile>Banken.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="876619740"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Banken" ID="{37642D60-6D7B-43E4-A29B-3B8DEB7369C5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dør" ID="{1754742F-C541-4E64-B72F-DA3CD3B97053}" ShortID="187841878" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dør" ID="{F4D8E196-CA50-4B3E-B8F0-1ED7FE4723A3}" ShortID="648238673">
+									<Language>SFX</Language>
+									<AudioFile>Dør.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="1007733609"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Dør" ID="{F4D8E196-CA50-4B3E-B8F0-1ED7FE4723A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{7103C1BD-0BFD-4FE6-B60A-05B6B4F1FDCD}" ShortID="220740000">
@@ -339,6 +404,11 @@
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>-7</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
