@@ -42,6 +42,7 @@ public class PlayerMove : MonoBehaviour {
     }
     public void PickUpHorn()
     {
+        GameObject.Find("GameManager").GetComponent<SoundManager>().StartGame();
         StartCoroutine(animateHornPickup());
     }
 
