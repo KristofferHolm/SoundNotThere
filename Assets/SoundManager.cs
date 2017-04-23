@@ -5,10 +5,13 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour {
 
     public float minWait, maxWait;
+    GameObject Doren;
     List<GameObject> ListOfGO;
     // Use this for initialization
     void Start()
     {
+        Doren = GameObject.Find("DorenRamme");
+        Doren.SetActive(false);
         ListOfGO = new List<GameObject>();
         ListOfGO.AddRange(GameObject.FindGameObjectsWithTag("PapFigur"));
     }
@@ -46,7 +49,8 @@ public class SoundManager : MonoBehaviour {
 
     public void EndGameScenario()
     {
-        print("the end is not there!");
+        Doren.SetActive(true);
+        AkSoundEngine.PostEvent("Banke",Doren);
     }
 
 }
