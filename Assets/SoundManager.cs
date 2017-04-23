@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour {
     void Start()
     {
         ListOfGO = new List<GameObject>();
-        ListOfGO.AddRange(GameObject.FindGameObjectsWithTag("Papfigur"));
+        ListOfGO.AddRange(GameObject.FindGameObjectsWithTag("PapFigur"));
     }
 	// Update is called once per frame
 	void Update () {

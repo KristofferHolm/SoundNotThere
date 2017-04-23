@@ -129,8 +129,7 @@ public class SoundHolder : MonoBehaviour {
         highLighted = true;
         highlightCD = 0.1f;
         RefreshHighlight();
-
-
+        GameObject.Find("GameManager").GetComponent<SoundManager>().RemoveMeFromList(gameObject);
     }
     void RefreshHighlight()
     {
