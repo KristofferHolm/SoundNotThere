@@ -67,17 +67,22 @@ public class SoundHolder : MonoBehaviour {
     }
     public void Complete()
     {
-        if(DOREN)
+        
+        if (DOREN)
         {
             Completed = true;
             StartCoroutine(LightUp(1.0f, true));
             StartCoroutine(OpenDoor());
         }
-        ready2Play = false;
-        Completed = true;
-        StartCoroutine(CompleteAnimation());
-        StartCoroutine(LightUp(1.0f, true));
-        //tag = "Untagged";
+        else
+        {
+            GameObject.Find("GameManager").GetComponent<SoundManager>().RemoveMeFromList(gameObject);
+            ready2Play = false;
+            Completed = true;
+            StartCoroutine(CompleteAnimation());
+            StartCoroutine(LightUp(1.0f, true));
+            //tag = "Untagged";
+        }
     }
 
     private IEnumerator OpenDoor()
@@ -115,6 +120,7 @@ public class SoundHolder : MonoBehaviour {
     private IEnumerator CompleteAnimation()
     {
         yield return new WaitForSeconds(5f); // 2 + 2 + 1 
+        
         AkSoundEngine.PostEvent(SoundBit, gameObject);
         StartCoroutine(Animate());
     }
@@ -172,7 +178,7 @@ public class SoundHolder : MonoBehaviour {
         highLighted = true;
         highlightCD = 0.1f;
         RefreshHighlight();
-        GameObject.Find("GameManager").GetComponent<SoundManager>().RemoveMeFromList(gameObject);
+       
     }
     void RefreshHighlight()
     {

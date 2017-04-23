@@ -5,11 +5,14 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour {
 
     public float minWait, maxWait;
-    GameObject Doren;
+    GameObject Doren, SpriteA, SpriteB;
     List<GameObject> ListOfGO;
     // Use this for initialization
     void Start()
     {
+        SpriteA = GameObject.Find("SpriteA");
+        SpriteB = GameObject.Find("SpriteB");
+        SpriteB.SetActive(false);
         Doren = GameObject.Find("Dor");
         Doren.SetActive(false);
         ListOfGO = new List<GameObject>();
@@ -21,12 +24,17 @@ public class SoundManager : MonoBehaviour {
 	}
     public void RemoveMeFromList(GameObject removeGO)
     {
+        print("hvad sker der?! " + removeGO.name);
+        if (SpriteB.activeSelf)
+            SpriteB.SetActive(false);
         ListOfGO.Remove(removeGO);
         if (ListOfGO.Count == 0)
             EndGameScenario();
     }
     public void StartGame()
     {
+        SpriteA.SetActive(false);
+        SpriteB.SetActive(true);
         AkSoundEngine.PostEvent("BGM_Play", gameObject);
         StartCoroutine(StartRandomSound());
     }
@@ -51,5 +59,6 @@ public class SoundManager : MonoBehaviour {
     {
         Doren.SetActive(true);
         Doren.GetComponent<SoundHolder>().Banken();
+        Doren.tag = "PapFigur";
     }
 }
