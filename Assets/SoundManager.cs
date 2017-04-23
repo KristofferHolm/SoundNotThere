@@ -36,8 +36,8 @@ public class SoundManager : MonoBehaviour {
         else
         {
             GameObject temp = ListOfGO[0];
-            AkSoundEngine.PostEvent(temp.name, temp);
             ListOfGO.Remove(ListOfGO[0]);
+            temp.GetComponent<SoundHolder>().PlaySound();
             ListOfGO.Add(temp);
             StartCoroutine(StartRandomSound());
             yield return null;
