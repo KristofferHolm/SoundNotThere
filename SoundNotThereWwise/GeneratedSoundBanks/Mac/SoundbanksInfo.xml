@@ -21,6 +21,8 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1093876158" Name="BGM_Play" ObjectPath="\Events\Default Work Unit\BGM_Play"/>
+				<Event Id="2090192256" Name="BGM_Stop" ObjectPath="\Events\Default Work Unit\BGM_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3610450331" Name="Blender" ObjectPath="\Events\Default Work Unit\Blender" MaxAttenuation="16.000000"/>
 				<Event Id="2817797090" Name="Glimt" ObjectPath="\Events\Default Work Unit\Glimt" MaxAttenuation="16.000000"/>
 				<Event Id="3126836846" Name="Hund" ObjectPath="\Events\Default Work Unit\Hund" MaxAttenuation="16.000000"/>
@@ -40,6 +42,10 @@
 				<File Id="49405778" Language="SFX">
 					<ShortName>Køleskab.wav</ShortName>
 					<Path>SFX\Køleskab_3ADACB5C.wem</Path>
+				</File>
+				<File Id="74593294" Language="SFX">
+					<ShortName>BGM.wav</ShortName>
+					<Path>SFX\BGM_4D7BABE6.wem</Path>
 				</File>
 				<File Id="195343118" Language="SFX">
 					<ShortName>Blender.wav</ShortName>

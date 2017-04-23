@@ -113,6 +113,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BGM_Play" ID="{139810D6-013D-455A-9279-B100091920AE}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6901293B-2ABA-4371-A913-2F72E4BCD00A}" ShortID="763342417" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{BD508CB3-79E5-4384-A147-5B39E11DF0F4}" Global="false">
+									<ObjectRef Name="BGM" ID="{23D2014E-1966-4360-9715-7B492ABA3BCA}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BGM_Stop" ID="{7C9D30AA-200B-4C9D-98FA-24599D1A8015}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{D988EC0A-1F69-4A2D-9A70-7BB82DD6F481}" ShortID="330660652" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{975137B9-06EE-424C-A985-C37A8EE1710D}" Global="false">
+									<ObjectRef Name="BGM" ID="{23D2014E-1966-4360-9715-7B492ABA3BCA}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
