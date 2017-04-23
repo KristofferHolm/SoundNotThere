@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	286100424	Swap			\Default Work Unit\Swap	
+	546651192	Dor			\Default Work Unit\Dor	
 	898583876	Fro			\Default Work Unit\Fro	
 	947300733	Koleskab			\Default Work Unit\Koleskab	
 	1093876158	BGM_Play			\Default Work Unit\BGM_Play	
@@ -10,8 +11,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2817797090	Glimt			\Default Work Unit\Glimt	
 	2861994579	Mobiltelefon			\Default Work Unit\Mobiltelefon	
 	3126836846	Hund			\Default Work Unit\Hund	
+	3600847130	Horn			\Default Work Unit\Horn	
 	3610450331	Blender			\Default Work Unit\Blender	
 	3917792242	Motorsav			\Default Work Unit\Motorsav	
+	4018763798	Banken			\Default Work Unit\Banken	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12364627	Vækkeur	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Vækkeur_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Vækkeur		75257
@@ -22,8 +25,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	332188677	Glimt	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Glimt_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Glimt		66396
 	348643319	Mobiltelefon	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Mobiltelefon_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Mobiltelefon		22232
 	412899284	Swap	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Swap_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Swap		78257
+	422967373	Horn	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Horn_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Horn		15159
 	428578082	Kat	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Kat_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Kat		18015
 	506034058	Motorsav	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Motorsav_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Motorsav		52312
 	697225523	Hund	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Hund_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Hund		10687
 	854878292	Frø	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Frø_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Frø		14930
+	876619740	Banken	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Banken_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Banken		36881
+	1007733609	Dør	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Dør_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Dør		53817
 

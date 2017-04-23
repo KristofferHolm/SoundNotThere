@@ -21,11 +21,14 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4018763798" Name="Banken" ObjectPath="\Events\Default Work Unit\Banken" MaxAttenuation="16.000000"/>
 				<Event Id="1093876158" Name="BGM_Play" ObjectPath="\Events\Default Work Unit\BGM_Play"/>
 				<Event Id="2090192256" Name="BGM_Stop" ObjectPath="\Events\Default Work Unit\BGM_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3610450331" Name="Blender" ObjectPath="\Events\Default Work Unit\Blender" MaxAttenuation="16.000000"/>
+				<Event Id="546651192" Name="Dor" ObjectPath="\Events\Default Work Unit\Dor" MaxAttenuation="16.000000"/>
 				<Event Id="898583876" Name="Fro" ObjectPath="\Events\Default Work Unit\Fro" MaxAttenuation="16.000000"/>
 				<Event Id="2817797090" Name="Glimt" ObjectPath="\Events\Default Work Unit\Glimt" MaxAttenuation="16.000000"/>
+				<Event Id="3600847130" Name="Horn" ObjectPath="\Events\Default Work Unit\Horn"/>
 				<Event Id="3126836846" Name="Hund" ObjectPath="\Events\Default Work Unit\Hund" MaxAttenuation="16.000000"/>
 				<Event Id="1250178355" Name="Kat" ObjectPath="\Events\Default Work Unit\Kat" MaxAttenuation="16.000000"/>
 				<Event Id="947300733" Name="Koleskab" ObjectPath="\Events\Default Work Unit\Koleskab" MaxAttenuation="16.000000"/>
@@ -68,6 +71,10 @@
 					<ShortName>Swap.wav</ShortName>
 					<Path>SFX\Swap_3ADACB5C.wem</Path>
 				</File>
+				<File Id="422967373" Language="SFX">
+					<ShortName>Horn.wav</ShortName>
+					<Path>SFX\Horn_3ADACB5C.wem</Path>
+				</File>
 				<File Id="428578082" Language="SFX">
 					<ShortName>Kat.wav</ShortName>
 					<Path>SFX\Kat_3ADACB5C.wem</Path>
@@ -83,6 +90,14 @@
 				<File Id="854878292" Language="SFX">
 					<ShortName>Frø.wav</ShortName>
 					<Path>SFX\Frø_3ADACB5C.wem</Path>
+				</File>
+				<File Id="876619740" Language="SFX">
+					<ShortName>Banken.wav</ShortName>
+					<Path>SFX\Banken_3ADACB5C.wem</Path>
+				</File>
+				<File Id="1007733609" Language="SFX">
+					<ShortName>Dør.wav</ShortName>
+					<Path>SFX\Dør_3ADACB5C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

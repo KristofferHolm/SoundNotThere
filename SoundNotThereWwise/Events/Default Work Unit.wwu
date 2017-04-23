@@ -152,6 +152,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Dor" ID="{E960EA75-377C-4E88-BC6C-428653CBE72C}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F6802BEC-76C0-4C84-819A-5D6FF528D4FC}" ShortID="111569419" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{24E8FDF9-5789-45DF-90FC-4765FE8CF734}" Global="false">
+									<ObjectRef Name="Dør" ID="{1754742F-C541-4E64-B72F-DA3CD3B97053}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Banken" ID="{D6C44B6E-674E-47AE-9BC6-01B11E22A3EB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{16C8369A-8810-4271-8BB7-5385AE4357B5}" ShortID="171689633" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2DDB7F3A-B4E6-4196-919E-0E277C6B1DA2}" Global="false">
+									<ObjectRef Name="Banken" ID="{D408FF22-4E92-4F05-A2A7-6D3B9EDAB892}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Horn" ID="{A43710F7-1950-427D-A742-72D9E3237318}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4C192A3C-3208-4724-88E7-55BA07BFD3D9}" ShortID="1004294205" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EEFFC3E6-9FF5-42F8-8EA1-2F0F56B9BC38}" Global="false">
+									<ObjectRef Name="Horn" ID="{F3081A16-A1D1-4432-A483-E6939B7D45D7}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
