@@ -113,7 +113,7 @@ public class SoundHolder : MonoBehaviour {
         AkSoundEngine.PostEvent("Horn", gameObject);
         Image TheEnd = GameObject.Find("TheEnd").GetComponent<Image>();
         TheEnd.enabled = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         Application.Quit();
     }
 

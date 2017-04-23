@@ -57,6 +57,7 @@ public class SoundManager : MonoBehaviour {
 
     public void EndGameScenario()
     {
+        AkSoundEngine.PostEvent("BGM_Stop", gameObject);
         Doren.SetActive(true);
         Doren.GetComponent<SoundHolder>().Banken();
         Doren.tag = "PapFigur";
