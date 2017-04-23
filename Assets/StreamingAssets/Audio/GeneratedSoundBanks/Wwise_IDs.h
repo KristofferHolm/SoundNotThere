@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID DOR = 546651192U;
         static const AkUniqueID FRO = 898583876U;
         static const AkUniqueID GLIMT = 2817797090U;
+        static const AkUniqueID HORN = 3600847130U;
         static const AkUniqueID HUND = 3126836846U;
         static const AkUniqueID KAT = 1250178355U;
         static const AkUniqueID KOLESKAB = 947300733U;

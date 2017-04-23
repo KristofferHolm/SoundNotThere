@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Mobiltelefon" ID="{F212DD65-C739-4021-A4EB-9BBD58D89C5E}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Motorsav" ID="{CF4C44A9-4CD5-4224-8495-A6B44CF02EB5}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Horn" ID="{A43710F7-1950-427D-A742-72D9E3237318}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Swap" ID="{C0C8FF7A-F809-444E-A074-5484EEF9D904}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Koleskab" ID="{0194709B-9FCB-44A0-858B-CC24C40BCD27}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BGM_Play" ID="{139810D6-013D-455A-9279-B100091920AE}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>

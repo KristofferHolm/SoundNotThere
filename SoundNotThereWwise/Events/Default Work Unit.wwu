@@ -174,6 +174,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Horn" ID="{A43710F7-1950-427D-A742-72D9E3237318}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4C192A3C-3208-4724-88E7-55BA07BFD3D9}" ShortID="1004294205" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EEFFC3E6-9FF5-42F8-8EA1-2F0F56B9BC38}" Global="false">
+									<ObjectRef Name="Horn" ID="{F3081A16-A1D1-4432-A483-E6939B7D45D7}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
