@@ -141,6 +141,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Fro" ID="{B8685628-6CBB-4885-9922-EA66E106A7AA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C30A3253-37E8-4F1D-9AFA-708FAC8B5ECB}" ShortID="445142067" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A9B76D90-65B3-4B69-A5F0-A175C8560F49}" Global="false">
+									<ObjectRef Name="Frø" ID="{85A0F2FC-5F2D-4468-AB68-44CFDBE6F520}" WorkUnitID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

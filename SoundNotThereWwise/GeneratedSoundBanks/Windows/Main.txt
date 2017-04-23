@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	286100424	Swap			\Default Work Unit\Swap	
+	898583876	Fro			\Default Work Unit\Fro	
 	947300733	Koleskab			\Default Work Unit\Koleskab	
 	1093876158	BGM_Play			\Default Work Unit\BGM_Play	
 	1162899944	Vakkeur			\Default Work Unit\Vakkeur	
@@ -24,4 +25,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	428578082	Kat	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Kat_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Kat		18015
 	506034058	Motorsav	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Motorsav_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Motorsav		52312
 	697225523	Hund	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Hund_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Hund		10687
+	854878292	Frø	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Frø_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Frø		14930
 
