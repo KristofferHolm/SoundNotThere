@@ -11,6 +11,7 @@
 						<ObjectRef Name="Koleskab" ID="{0194709B-9FCB-44A0-858B-CC24C40BCD27}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BGM_Play" ID="{139810D6-013D-455A-9279-B100091920AE}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Hund" ID="{43299C67-35D2-47DE-A48B-128DDBEA9DE7}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Fro" ID="{B8685628-6CBB-4885-9922-EA66E106A7AA}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Ugle" ID="{93F85755-28D0-495B-B74F-1F32B8A3DFD3}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Vakkeur" ID="{F72CEB7F-1563-49E8-920E-37A045D1FBF5}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Glimt" ID="{666F733C-ECF6-4AA1-8FD0-5FC2799EED86}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>

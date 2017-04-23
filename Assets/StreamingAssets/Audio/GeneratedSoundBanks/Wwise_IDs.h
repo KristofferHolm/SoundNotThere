@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BGM_PLAY = 1093876158U;
         static const AkUniqueID BGM_STOP = 2090192256U;
         static const AkUniqueID BLENDER = 3610450331U;
+        static const AkUniqueID FRO = 898583876U;
         static const AkUniqueID GLIMT = 2817797090U;
         static const AkUniqueID HUND = 3126836846U;
         static const AkUniqueID KAT = 1250178355U;

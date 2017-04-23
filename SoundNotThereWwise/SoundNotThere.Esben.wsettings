@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{7B7D450C-90A6-40F1-BB75-AE58FD6CA389}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Home\Game Jam\Nordic Game Jam 2017\BGM\Bounced Files"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="E:\Home\Game Jam\Nordic Game Jam 2017\Frø\Bounced Files"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
@@ -28,7 +28,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="5"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
-				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AQAAAAIAAABA9////////wAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAgMvxDQAAAAAAAAAAAAAAAAEAAAAAAAAAmBs3AAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABXamim+X8AAAAAAAD/////CAAAAAAAAAAeHsu1+X8AAAAAAAAAAAAA//////////8BGYhm+X8AAAAAAAAAAAAAAAAAAAAAAAAGAENhbWVyYQCHrA4AAAAAYENJAAAAAAAAAAAAAAAAAGBDSQAAAAAAL2aGu/x/AADQh6wOAAAAALgYaLv8fwAAAgAAAAAAAAAAACgBAAAAAFBh4QoAAAAAXaa0AAAAAAACAAAAAAAAAAIAAAAAAAAAUGHhCgAAAAAAAAAAAAAAABAAAAAAAAAAASTlAAAAAAA="/>
+				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AQAAAAIAAABA9////////wAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAgMvxDQAAAAAAAAAAAAAAAAEAAAAAAAAAmBs3AAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABXamim+X8AAAAAAAD/////CAAAAAAAAAAeHsu1+X8AAAAAAAAAAAAA//////////8BGYhm+X8AAAAAAAAAAAAAAAAAAAAAAAAGAENhbWVyYQDQsQ4AAAAAEGhPAAAAAAAAAAAAAAAAABBoTwAAAAAAL2aGu/x/AADY0LEOAAAAALgYaLv8fwAAAgAAAAAAAAAAAOUAAAAAADBf3woAAAAAXaYhAQAAAAACAAAAAAAAAAIAAAAAAAAAMF/fCgAAAAAAAAAAAAAAABAAAAAAAAAAASSiAAAAAAA="/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
