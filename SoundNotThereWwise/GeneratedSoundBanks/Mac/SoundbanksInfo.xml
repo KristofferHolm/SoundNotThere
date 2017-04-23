@@ -35,6 +35,7 @@
 				<Event Id="2861994579" Name="Mobiltelefon" ObjectPath="\Events\Default Work Unit\Mobiltelefon" MaxAttenuation="16.000000"/>
 				<Event Id="3917792242" Name="Motorsav" ObjectPath="\Events\Default Work Unit\Motorsav" MaxAttenuation="16.000000"/>
 				<Event Id="286100424" Name="Swap" ObjectPath="\Events\Default Work Unit\Swap"/>
+				<Event Id="1080872023" Name="Tom" ObjectPath="\Events\Default Work Unit\Tom" MaxAttenuation="16.000000"/>
 				<Event Id="1456535184" Name="Ugle" ObjectPath="\Events\Default Work Unit\Ugle" MaxAttenuation="16.000000"/>
 				<Event Id="1162899944" Name="Vakkeur" ObjectPath="\Events\Default Work Unit\Vakkeur" MaxAttenuation="16.000000"/>
 			</IncludedEvents>

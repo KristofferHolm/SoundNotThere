@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	546651192	Dor			\Default Work Unit\Dor	
 	898583876	Fro			\Default Work Unit\Fro	
 	947300733	Koleskab			\Default Work Unit\Koleskab	
+	1080872023	Tom			\Default Work Unit\Tom	
 	1093876158	BGM_Play			\Default Work Unit\BGM_Play	
 	1162899944	Vakkeur			\Default Work Unit\Vakkeur	
 	1250178355	Kat			\Default Work Unit\Kat	
@@ -15,6 +16,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3610450331	Blender			\Default Work Unit\Blender	
 	3917792242	Motorsav			\Default Work Unit\Motorsav	
 	4018763798	Banken			\Default Work Unit\Banken	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	572614156	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Tom\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12364627	Vækkeur	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\SFX\Vækkeur_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Vækkeur		75257
