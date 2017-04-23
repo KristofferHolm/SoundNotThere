@@ -17,6 +17,7 @@
 						<ObjectRef Name="Ugle" ID="{93F85755-28D0-495B-B74F-1F32B8A3DFD3}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Vakkeur" ID="{F72CEB7F-1563-49E8-920E-37A045D1FBF5}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Glimt" ID="{666F733C-ECF6-4AA1-8FD0-5FC2799EED86}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Tom" ID="{AAB15033-FA1A-4C7F-8DD6-9BB1B212B55B}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BGM_Stop" ID="{7C9D30AA-200B-4C9D-98FA-24599D1A8015}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Blender" ID="{394D75AB-FAF2-4D8D-88C7-0C1C33AF4F3F}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dor" ID="{E960EA75-377C-4E88-BC6C-428653CBE72C}" WorkUnitID="{3388A8BC-130C-4563-A75A-1EC8F7675EFD}" Filter="7" Origin="Manual"/>

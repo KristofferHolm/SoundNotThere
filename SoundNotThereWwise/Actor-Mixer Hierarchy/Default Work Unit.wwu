@@ -209,6 +209,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Glimt" ID="{E60589B5-C634-4BAC-8A3E-B21EDDE5D0DA}" ShortID="220860616" Type="SoundFX">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Main" ID="{ECA0DB4B-F77E-4154-991C-99815E0AC734}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
@@ -374,6 +381,27 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Dør" ID="{F4D8E196-CA50-4B3E-B8F0-1ED7FE4723A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tom" ID="{ACF35853-EF4C-46B2-A96D-3DC86068A460}" ShortID="986278858" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{19C8EF23-98AE-43D0-A4B5-ABFF994C112B}" ShortID="572614156" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="0.1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{19C8EF23-98AE-43D0-A4B5-ABFF994C112B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
