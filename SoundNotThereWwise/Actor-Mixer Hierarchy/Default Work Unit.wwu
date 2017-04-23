@@ -465,7 +465,7 @@
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>-320</Value>
+										<Value>25</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
