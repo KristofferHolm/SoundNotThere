@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\</ProjectRoot>
-		<SourceFilesRoot>E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>

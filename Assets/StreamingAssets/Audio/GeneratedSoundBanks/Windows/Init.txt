@@ -8,8 +8,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	788737504	Skov			\Default Work Unit\Master Audio Bus\Environmental\Reverb\Skov	
 	1631958101	Lejlighed			\Default Work Unit\Master Audio Bus\Environmental\Reverb\Lejlighed	
+	3522109173	Strand			\Default Work Unit\Master Audio Bus\Environmental\Reverb\Strand	
 
 Effect plug-ins	ID	Name	Type				Notes
+	379546525	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
+	995653654	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 

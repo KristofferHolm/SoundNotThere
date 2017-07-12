@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="75">
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1344181995" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1344322003" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1344482012" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Attenuations\Default Work Unit.wwu" DateLow="1344512014" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Audio Devices\Default Work Unit.wwu" DateLow="1344552016" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1344592019" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Conversion Settings\Default Work Unit.wwu" DateLow="1344622020" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1344662023" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1344692024" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Effects\Default Work Unit.wwu" DateLow="1344732027" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1344792030" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Effects\Factory Effects.wwu" DateLow="1344872035" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Effects\Factory McDSP Effects.wwu" DateLow="1344932038" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Events\Default Work Unit.wwu" DateLow="1344972040" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Game Parameters\Default Work Unit.wwu" DateLow="1345012043" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1345042044" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1345612077" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1345652079" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1345692082" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Modulators\Default Work Unit.wwu" DateLow="1345722083" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Presets\Default Work Unit.wwu" DateLow="1357132736" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Queries\Default Work Unit.wwu" DateLow="1357172738" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Queries\Factory Queries.wwu" DateLow="1357212741" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\SoundBanks\Default Work Unit.wwu" DateLow="1357262743" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1357462755" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\SoundNotThere.wproj" DateLow="1663408029" DateHigh="30604117"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\States\Default Work Unit.wwu" DateLow="1357502757" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Switches\Default Work Unit.wwu" DateLow="1357532759" DateHigh="30604035"/>
+	<ValidationCacheItem File="C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\Triggers\Default Work Unit.wwu" DateLow="1357562761" DateHigh="30604035"/>
+</ValidationCache>

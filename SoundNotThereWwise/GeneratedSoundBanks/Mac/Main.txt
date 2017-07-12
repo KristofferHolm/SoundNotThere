@@ -21,19 +21,19 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	572614156	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Tom\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	12364627	Vækkeur	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Vækkeur_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Vækkeur		75257
-	49405778	Køleskab	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Køleskab_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Køleskab		30699
-	74593294	BGM	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\BGM_4D7BABE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\BGM		2679182
-	195343118	Blender	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Blender_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Blender		65178
-	230968681	Ugle	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Ugle_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Ugle		27619
-	332188677	Glimt	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Glimt_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Glimt		66396
-	348643319	Mobiltelefon	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Mobiltelefon_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Mobiltelefon		22232
-	412899284	Swap	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Swap_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Swap		78257
-	422967373	Horn	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Horn_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Horn		18012
-	428578082	Kat	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Kat_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Kat		18015
-	506034058	Motorsav	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Motorsav_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Motorsav		52312
-	697225523	Hund	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Hund_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Hund		10687
-	854878292	Frø	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Frø_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Frø		14930
-	876619740	Banken	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Banken_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Banken		36881
-	1007733609	Dør	E:\Home\Game Jam\Nordic Game Jam 2017\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Dør_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Dør		53817
+	12364627	Vækkeur	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Vækkeur_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Vækkeur		75257
+	49405778	Køleskab	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Køleskab_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Køleskab		30699
+	74593294	BGM	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\BGM_4D7BABE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\BGM		2679182
+	195343118	Blender	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Blender_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Blender		65178
+	230968681	Ugle	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Ugle_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Ugle		27619
+	332188677	Glimt	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Glimt_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Glimt		66396
+	348643319	Mobiltelefon	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Mobiltelefon_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Mobiltelefon		22232
+	412899284	Swap	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Swap_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Swap		78257
+	422967373	Horn	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Horn_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Horn		18012
+	428578082	Kat	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Kat_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Kat		18015
+	506034058	Motorsav	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Motorsav_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Motorsav		52312
+	697225523	Hund	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Hund_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Hund		10687
+	854878292	Frø	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Frø_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Frø		14930
+	876619740	Banken	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Banken_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Banken		36881
+	1007733609	Dør	C:\Users\RarePepe\Documents\SoundNotThere\SoundNotThereWwise\.cache\Mac\SFX\Dør_3ADACB5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Dør		53817
 
