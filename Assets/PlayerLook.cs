@@ -10,6 +10,7 @@ public class PlayerLook : MonoBehaviour {
     public float maximumX = 360F;
     public float minimumY = -60F;
     public float maximumY = 60F;
+
     float rotationX = 0F;
     float rotationY = 0F;
     Quaternion originalRotation;
@@ -30,6 +31,7 @@ public class PlayerLook : MonoBehaviour {
     void Start()
     {
         originalRotation = transform.localRotation;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
     public static float ClampAngle(float angle, float min, float max)
