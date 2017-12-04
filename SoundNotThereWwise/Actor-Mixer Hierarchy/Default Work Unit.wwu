@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}" SchemaVersion="80">
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{82DE3D05-BA4A-42DA-9234-406AEA771DAA}" PersistMode="Standalone">
 			<ChildrenList>
@@ -49,7 +49,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Hund" ID="{08D6ACA4-7CC8-48B3-A575-7D176C4DDC56}" ShortID="184360919" Type="SoundFX">
+						<Sound Name="Hund" ID="{08D6ACA4-7CC8-48B3-A575-7D176C4DDC56}" ShortID="184360919">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -78,7 +78,7 @@
 								<ActiveSource Name="Hund" ID="{73725E2D-71D5-4ADD-8897-A9F773E03914}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Blender" ID="{8DABF46E-75A2-446B-B516-E725D3C4E68A}" ShortID="766293171" Type="SoundFX">
+						<Sound Name="Blender" ID="{8DABF46E-75A2-446B-B516-E725D3C4E68A}" ShortID="766293171">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -104,7 +104,7 @@
 								<ActiveSource Name="Blender" ID="{5145FB86-3A05-4BF2-B59F-6A13393C7675}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Kat" ID="{AD99B4AD-A850-4A28-8F34-E5441659009E}" ShortID="655142787" Type="SoundFX">
+						<Sound Name="Kat" ID="{AD99B4AD-A850-4A28-8F34-E5441659009E}" ShortID="655142787">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -130,7 +130,7 @@
 								<ActiveSource Name="Kat" ID="{0C40BD9E-E142-4613-B859-11B69DF4613D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Køleskab" ID="{30785565-9D83-4894-8E5C-CDFC800EFC9A}" ShortID="438757664" Type="SoundFX">
+						<Sound Name="Køleskab" ID="{30785565-9D83-4894-8E5C-CDFC800EFC9A}" ShortID="438757664">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -156,7 +156,7 @@
 								<ActiveSource Name="Køleskab" ID="{CC42336A-5916-4E4B-A3AB-866CE4CA12BA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Mobiltelefon" ID="{005CD42E-854B-4AFC-A18E-0E9C03605C75}" ShortID="784553414" Type="SoundFX">
+						<Sound Name="Mobiltelefon" ID="{005CD42E-854B-4AFC-A18E-0E9C03605C75}" ShortID="784553414">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -182,7 +182,7 @@
 								<ActiveSource Name="Mobiltelefon" ID="{7563D42D-9344-4F46-9BCA-44BC169D1ADC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Vækkeur" ID="{FDACEA1A-2F47-4881-B32E-6C02D62B8E60}" ShortID="680082837" Type="SoundFX">
+						<Sound Name="Vækkeur" ID="{FDACEA1A-2F47-4881-B32E-6C02D62B8E60}" ShortID="680082837">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -208,7 +208,7 @@
 								<ActiveSource Name="Vækkeur" ID="{2292DBBE-598A-4DF4-9ED0-569856B28C96}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Glimt" ID="{E60589B5-C634-4BAC-8A3E-B21EDDE5D0DA}" ShortID="220860616" Type="SoundFX">
+						<Sound Name="Glimt" ID="{E60589B5-C634-4BAC-8A3E-B21EDDE5D0DA}" ShortID="220860616">
 							<PropertyList>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
@@ -237,7 +237,7 @@
 								<ActiveSource Name="Glimt" ID="{5625567B-F9A9-4C5D-9F7D-E72B221BAA8E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Motorsav" ID="{0FE43916-098D-4615-A7EB-A2987DCF9CB7}" ShortID="795700768" Type="SoundFX">
+						<Sound Name="Motorsav" ID="{0FE43916-098D-4615-A7EB-A2987DCF9CB7}" ShortID="795700768">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -263,7 +263,7 @@
 								<ActiveSource Name="Motorsav" ID="{76C7B847-8E86-40F8-929A-950653273648}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Ugle" ID="{38C046DD-73A8-49AF-9E2F-994A1FDFF4B6}" ShortID="262497698" Type="SoundFX">
+						<Sound Name="Ugle" ID="{38C046DD-73A8-49AF-9E2F-994A1FDFF4B6}" ShortID="262497698">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
@@ -299,7 +299,7 @@
 								<ActiveSource Name="Ugle" ID="{991AD2C2-A184-46A0-80A8-8D281362A944}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Frø" ID="{85A0F2FC-5F2D-4468-AB68-44CFDBE6F520}" ShortID="927575536" Type="SoundFX">
+						<Sound Name="Frø" ID="{85A0F2FC-5F2D-4468-AB68-44CFDBE6F520}" ShortID="927575536">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -325,7 +325,7 @@
 								<ActiveSource Name="Frø" ID="{7B0B7C8D-2470-4FBB-8D9D-FA57A7E067DD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Banken" ID="{D408FF22-4E92-4F05-A2A7-6D3B9EDAB892}" ShortID="583566377" Type="SoundFX">
+						<Sound Name="Banken" ID="{D408FF22-4E92-4F05-A2A7-6D3B9EDAB892}" ShortID="583566377">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -354,7 +354,7 @@
 								<ActiveSource Name="Banken" ID="{37642D60-6D7B-43E4-A29B-3B8DEB7369C5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Dør" ID="{1754742F-C541-4E64-B72F-DA3CD3B97053}" ShortID="187841878" Type="SoundFX">
+						<Sound Name="Dør" ID="{1754742F-C541-4E64-B72F-DA3CD3B97053}" ShortID="187841878">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -383,7 +383,7 @@
 								<ActiveSource Name="Dør" ID="{F4D8E196-CA50-4B3E-B8F0-1ED7FE4723A3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Tom" ID="{ACF35853-EF4C-46B2-A96D-3DC86068A460}" ShortID="986278858" Type="SoundFX">
+						<Sound Name="Tom" ID="{ACF35853-EF4C-46B2-A96D-3DC86068A460}" ShortID="986278858">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
@@ -419,7 +419,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Swap" ID="{A02C0EEC-DBFA-4AC5-BDC6-1186B1A10E37}" ShortID="84112073" Type="SoundFX">
+						<Sound Name="Swap" ID="{A02C0EEC-DBFA-4AC5-BDC6-1186B1A10E37}" ShortID="84112073">
 							<PropertyList>
 								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 								<Property Name="GameAuxSendVolume" Type="Real64">
@@ -461,7 +461,7 @@
 								<ActiveSource Name="Swap" ID="{B6C9C5CB-3CC6-4188-92B7-7C74F3773C92}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="BGM" ID="{23D2014E-1966-4360-9715-7B492ABA3BCA}" ShortID="988778220" Type="SoundFX">
+						<Sound Name="BGM" ID="{23D2014E-1966-4360-9715-7B492ABA3BCA}" ShortID="988778220">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -488,7 +488,7 @@
 								<ActiveSource Name="BGM" ID="{121986EA-D2AD-4F4D-8CF2-6AD0D8D384FA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Horn" ID="{F3081A16-A1D1-4432-A483-E6939B7D45D7}" ShortID="722499216" Type="SoundFX">
+						<Sound Name="Horn" ID="{F3081A16-A1D1-4432-A483-E6939B7D45D7}" ShortID="722499216">
 							<PropertyList>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">

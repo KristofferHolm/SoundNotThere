@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="80">
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4080916243" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="4081171669" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="4081467452" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Attenuations\Default Work Unit.wwu" DateLow="4079858185" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Audio Devices\Default Work Unit.wwu" DateLow="4081718110" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="4080264245" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Conversion Settings\Default Work Unit.wwu" DateLow="4080845959" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="4081532868" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="4080028623" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Effects\Default Work Unit.wwu" DateLow="4080053690" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="4080429682" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Effects\Factory Effects.wwu" DateLow="4080590119" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Effects\Factory McDSP Effects.wwu" DateLow="4079988728" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Events\Default Work Unit.wwu" DateLow="4081688028" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Game Parameters\Default Work Unit.wwu" DateLow="4080324408" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="4080470042" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4080815710" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="4081607832" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Mixing Sessions\Default Work Unit.wwu" DateLow="4080199078" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Modulators\Default Work Unit.wwu" DateLow="4080229149" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Presets\Default Work Unit.wwu" DateLow="4080680347" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Queries\Default Work Unit.wwu" DateLow="4080770637" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Queries\Factory Queries.wwu" DateLow="4080139037" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\SoundBanks\Default Work Unit.wwu" DateLow="4080715703" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="4079793082" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\SoundNotThere.Kristoffer.wsettings" DateLow="833892226" DateHigh="30633213"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\SoundNotThere.wproj" DateLow="4079737851" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\States\Default Work Unit.wwu" DateLow="4080740518" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Switches\Default Work Unit.wwu" DateLow="4080294320" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Triggers\Default Work Unit.wwu" DateLow="4079828134" DateHigh="30633212"/>
+	<ValidationCacheItem File="C:\Projects\Private\SoundHorn\SoundNotThereWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="4081778280" DateHigh="30633212"/>
+</ValidationCache>
