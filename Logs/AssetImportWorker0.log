@@ -15,12 +15,12 @@ C:/UnityProjects/SoundHornVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54799
+59732
 Successfully changed project path to: C:/UnityProjects/SoundHornVR
 C:/UnityProjects/SoundHornVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 117.68 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 1.34 ms.
+Refreshing native plugins compatible for Editor in 114.89 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.95 ms.
 Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/UnityProjects/SoundHornVR/Assets
@@ -32,242 +32,231 @@ Direct3D:
     VRAM:     5991 MB
     Driver:   27.21.14.6231
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001974 seconds.
+Registered in 0.001665 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.82 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
+Refreshing native plugins compatible for Editor in 106.05 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.763 seconds
+- Completed reload, in  1.437 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006003 seconds.
+Registered in 0.004377 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.71 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 107.63 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.60.0
 Mono: successfully reloaded assembly
-- Completed reload, in  1.053 seconds
+- Completed reload, in  0.999 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.87 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Unloading 3420 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.3 MB.
-System memory in use after: 138.5 MB.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 4692 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.9 MB.
+System memory in use after: 192.2 MB.
 
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 3856.
-Total: 3.835200 ms (FindLiveObjects: 0.500000 ms CreateObjectMapping: 0.294500 ms MarkObjects: 2.944300 ms  DeleteObjects: 0.094000 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 5130.
+Total: 2.696700 ms (FindLiveObjects: 0.486800 ms CreateObjectMapping: 0.118100 ms MarkObjects: 2.015700 ms  DeleteObjects: 0.075000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9222b99937b918022a9cc33b6e833563') in 0.012036 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008404 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 137.55 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.412 seconds
-Platform modules already initialized, skipping
-Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
-Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
-Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
-Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.30 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4612 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 180.3 MB.
-System memory in use after: 176.2 MB.
-
-Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 5077.
-Total: 6.485900 ms (FindLiveObjects: 0.615000 ms CreateObjectMapping: 0.110200 ms MarkObjects: 3.349100 ms  DeleteObjects: 2.407400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  path: Assets/Oculus/AudioManager
+  artifactKey: Guid(29b96a528fa49ce449e5dd33e0651e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/AudioManager using Guid(29b96a528fa49ce449e5dd33e0651e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c0799dc6b74fc965b2c82e2e8c19e1') in 0.011384 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1960.624646 seconds.
-  path: Assets/CustomXRSystemData.asset
-  artifactKey: Guid(2aa18012aa9bdd44c9d6a706d59cda71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CustomXRSystemData.asset using Guid(2aa18012aa9bdd44c9d6a706d59cda71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fd3fb0e795eae76016e2a6bbba4628') in 0.048119 seconds 
+  Time since last request: 0.000150 seconds.
+  path: Assets/Oculus/LipSync
+  artifactKey: Guid(d73a01d52636b714d8eafcc3ec0c08d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/LipSync using Guid(d73a01d52636b714d8eafcc3ec0c08d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd370f0752d1115c9bfea9853fd87839e') in 0.004244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Oculus/Avatar
+  artifactKey: Guid(4ff799725e4773e4ba64e7c4b8cfb386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Avatar using Guid(4ff799725e4773e4ba64e7c4b8cfb386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc543ef26eb9b8abc7c132b98f78691') in 0.004539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Oculus/Platform/Scripts
+  artifactKey: Guid(8c531f0930e85084a8a5bf70c568297c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Platform/Scripts using Guid(8c531f0930e85084a8a5bf70c568297c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa663ed3227aaa69704ca1afd2bb2d9') in 0.004269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.694586 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Animations
+  artifactKey: Guid(43999731f104a6247ac375aa23e861ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Animations using Guid(43999731f104a6247ac375aa23e861ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3041f0efaae8f34a9c7dd311d4d781fd') in 0.006499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.416143 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample
+  artifactKey: Guid(d9ceacb02d36be644a0a761944dc251c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample using Guid(d9ceacb02d36be644a0a761944dc251c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51f02d3fd5f4056aabe523f93672788') in 0.006344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.451099 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/DistanceGrab
+  artifactKey: Guid(6bfcbb1c403d9724d973b8a420e73a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/DistanceGrab using Guid(6bfcbb1c403d9724d973b8a420e73a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709449365a3c1f49322e13c871611ef8') in 0.006231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.131888 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/DebugUI
+  artifactKey: Guid(e19edefb2b230cd4a957633b38da604e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/DebugUI using Guid(e19edefb2b230cd4a957633b38da604e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdc00a21c216bb51bb9910e80637b73') in 0.006018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.154924 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/CustomHands
+  artifactKey: Guid(9f27ae35e9c6a864a9658954416bfc75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/CustomHands using Guid(9f27ae35e9c6a864a9658954416bfc75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d26b37ae963d3d07e10b9da26d64c21') in 0.006305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.958630 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Stereo180Video.unity
+  artifactKey: Guid(11cf8fa7bf3deb04db11bd170c0b4338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Stereo180Video.unity using Guid(11cf8fa7bf3deb04db11bd170c0b4338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63244ac0854c623419329e90f9964cb0') in 0.013869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.546959 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/WidevineVideo.unity
+  artifactKey: Guid(5495456b7253d31479996b9587c20927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/WidevineVideo.unity using Guid(5495456b7253d31479996b9587c20927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209d01c77a4368eb9a7c80c6f4dea012') in 0.006241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.804390 seconds.
+  path: Assets/Resources/OculusPlatformSettings.asset
+  artifactKey: Guid(778bafd9fab4edd409800db26ee33e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/OculusPlatformSettings.asset using Guid(778bafd9fab4edd409800db26ee33e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943554f5ed765c587a8b675000a81d01') in 0.021333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.626226 seconds.
+  path: Assets/PapFigurer
+  artifactKey: Guid(1f0e2b4ce7572024dbbc7953ee1b9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PapFigurer using Guid(1f0e2b4ce7572024dbbc7953ee1b9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba15b66a0f85311d6b43580ada5919db') in 0.006372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.283170 seconds.
+  path: Assets/PostProcessing
+  artifactKey: Guid(ef476bfb8a873f14c9d798034ae15aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing using Guid(ef476bfb8a873f14c9d798034ae15aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282baec32f4eaabb24e7116c9e361bfa') in 0.006497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.146243 seconds.
+  path: Assets/PostProcessing/Editor
+  artifactKey: Guid(e0e418747b892364db5c5f4451e67ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Editor using Guid(e0e418747b892364db5c5f4451e67ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6f3aed26cec233a7f39d46801e3d7f') in 0.006385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.650277 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(c701f13e9d55f1f4a8abd630b8b5e2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(c701f13e9d55f1f4a8abd630b8b5e2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87fbe798b2ee30017bd5b8481b906d59') in 0.006153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.212024 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(d49ec2e8f06f4874e94b663e110abddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(d49ec2e8f06f4874e94b663e110abddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04a871c6a8cf5d08820b2857d07d7e9') in 0.005968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.347667 seconds.
+  path: Assets/Resources/OVRBuildConfig.asset
+  artifactKey: Guid(7acb8dd5c60858645990e6e7fe68fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/OVRBuildConfig.asset using Guid(7acb8dd5c60858645990e6e7fe68fdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b02e29639fe575043a5e38b97311d3f') in 0.006452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.299393 seconds.
+  path: Assets/StreamingAssets
+  artifactKey: Guid(f64c73f8b7f4e774d8dfefe340f4e83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets using Guid(f64c73f8b7f4e774d8dfefe340f4e83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0e332c23d0ad04943492fbb712740f') in 0.006223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.245967 seconds.
+  path: Assets/MainScene.unity
+  artifactKey: Guid(cd55efbf05db14743ad3c9ed068532da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainScene.unity using Guid(cd55efbf05db14743ad3c9ed068532da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41bc2d3b638d67b6c4f0ceb1b4818ee') in 0.006029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.425686 seconds.
+  path: Assets/UniversalRenderPipelineAsset.asset
+  artifactKey: Guid(5d9536458d7355f4b89dcd4e90350d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineAsset.asset using Guid(5d9536458d7355f4b89dcd4e90350d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2ba3ad78b1e66954cfb7a0cd9738c5') in 0.019363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.652525 seconds.
+  path: Assets/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(1e769ce77e99f2d4d93487b97691291a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineAsset_Renderer.asset using Guid(1e769ce77e99f2d4d93487b97691291a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2209b82432ff6087af7f587ae728122e') in 0.007181 seconds 
 ========================================================================
 Received Prepare
-Switching render pipeline 00000000000000000000000000000000 -> f3217dbe8df45114e94714f322680732
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 9.45 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 91.4 MB.
+Refreshing native plugins compatible for Editor in 8.30 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 34 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
 System memory in use after: 87.6 MB.
 
-Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 5088.
-Total: 7.062000 ms (FindLiveObjects: 0.684100 ms CreateObjectMapping: 0.129200 ms MarkObjects: 3.985300 ms  DeleteObjects: 2.261700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 682.628137 seconds.
-  path: Assets/PapFigurer/Textures/Asset 4@4x.png
-  artifactKey: Guid(7a4a09469fcd43b42b863567cd9e21c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PapFigurer/Textures/Asset 4@4x.png using Guid(7a4a09469fcd43b42b863567cd9e21c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '690b593016e77c8326cd9a282c7ac27c') in 0.103068 seconds 
-========================================================================
-Received Prepare
-Switching build target platform(13) subTarget(589824) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Switching render pipeline 00000000000000000000000000000000 -> f3217dbe8df45114e94714f322680732
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.07 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 78 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.4 MB.
-System memory in use after: 87.0 MB.
-
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 5092.
-Total: 9.252200 ms (FindLiveObjects: 0.502600 ms CreateObjectMapping: 0.118600 ms MarkObjects: 5.563000 ms  DeleteObjects: 3.066200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  buildTarget: platform 13, subtarget 524288, extendedPlatform 0 -> platform 13, subtarget 589824, extendedPlatform 0
-  graphicsApiMask: 2048 -> 2304
-========================================================================
-Received Import Request.
-  Time since last request: 468.929770 seconds.
-  path: Assets/PapFigurer/Textures/Asset 4@4x.png
-  artifactKey: Guid(7a4a09469fcd43b42b863567cd9e21c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PapFigurer/Textures/Asset 4@4x.png using Guid(7a4a09469fcd43b42b863567cd9e21c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4f39a45e7e512c49098e6978ac5496') in 0.029720 seconds 
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 10.03 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 78 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.4 MB.
-System memory in use after: 87.0 MB.
-
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 5093.
-Total: 6.588000 ms (FindLiveObjects: 0.959800 ms CreateObjectMapping: 0.126900 ms MarkObjects: 3.444200 ms  DeleteObjects: 2.055800 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5133.
+Total: 3.578900 ms (FindLiveObjects: 0.514000 ms CreateObjectMapping: 0.116500 ms MarkObjects: 2.922900 ms  DeleteObjects: 0.024600 ms)
 
 ========================================================================
 Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 10.97 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Unloading 78 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.5 MB.
-System memory in use after: 87.0 MB.
+Refreshing native plugins compatible for Editor in 7.95 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.6 MB.
 
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 5093.
-Total: 7.627500 ms (FindLiveObjects: 0.696500 ms CreateObjectMapping: 0.128800 ms MarkObjects: 4.631900 ms  DeleteObjects: 2.169000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 3299.696154 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_main_elements_DiffuseGlossiness.png
-  artifactKey: Guid(67dce7e8b86381241a992e155b539e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_main_elements_DiffuseGlossiness.png using Guid(67dce7e8b86381241a992e155b539e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a21a03f24807278ff044a6e03b3e5d') in 0.078508 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/TrainScene/ReflectionProbe-0.png
-  artifactKey: Guid(1886a7586ae500c439dc72de669677a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/TrainScene/ReflectionProbe-0.png using Guid(1886a7586ae500c439dc72de669677a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342ee56b8e97c81eaa75565554865e8a') in 0.061278 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_main_elements_Normal.png
-  artifactKey: Guid(da1ec16df8e9d9a46b0b596dbee0fa49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_main_elements_Normal.png using Guid(da1ec16df8e9d9a46b0b596dbee0fa49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f7f3a762426ff77397d6f9c49b2759') in 0.030796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.267906 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_bg_elements_DiffuseGlossiness.png
-  artifactKey: Guid(78fba6399dff89e4faa8f52eb005a8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_bg_elements_DiffuseGlossiness.png using Guid(78fba6399dff89e4faa8f52eb005a8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40325ad021b3563c7622efff6b6f149') in 0.061718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_bg_elements_Normal.png
-  artifactKey: Guid(8186b5f1a794df84bbd5cdc872dd44b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/diorama_paint_diorama_bg_elements_Normal.png using Guid(8186b5f1a794df84bbd5cdc872dd44b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '783e5d0a6cfaa57c253b2a208e8ba21d') in 0.023180 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.043322 seconds.
-  path: Assets/UniversalRenderPipelineAsset.asset
-  artifactKey: Guid(f3217dbe8df45114e94714f322680732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineAsset.asset using Guid(f3217dbe8df45114e94714f322680732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc0e11798f41bc0d67d5bb89930c074') in 0.008135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.184395 seconds.
-  path: Assets/UniversalRenderPipelineAsset_Renderer.asset
-  artifactKey: Guid(85779f3c8ba179641bd11eaad45d38f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineAsset_Renderer.asset using Guid(85779f3c8ba179641bd11eaad45d38f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c42662f4e1cebb23291899134ed313') in 0.007933 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.234948 seconds.
-  path: Assets/SoundSwitch.cs
-  artifactKey: Guid(3f16977f24d39ed4985130f67c5c9a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SoundSwitch.cs using Guid(3f16977f24d39ed4985130f67c5c9a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a638c64feeb316e544dcc078d7e12034') in 0.010571 seconds 
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 9.15 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 78 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 96.0 MB.
-System memory in use after: 91.9 MB.
-
-Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 5118.
-Total: 6.404500 ms (FindLiveObjects: 0.591000 ms CreateObjectMapping: 0.128800 ms MarkObjects: 3.007900 ms  DeleteObjects: 2.675900 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5133.
+Total: 3.332300 ms (FindLiveObjects: 0.465900 ms CreateObjectMapping: 0.124100 ms MarkObjects: 2.712600 ms  DeleteObjects: 0.029000 ms)
 
 ========================================================================
 Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 10.89 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 87 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 97.0 MB.
-System memory in use after: 92.8 MB.
+Refreshing native plugins compatible for Editor in 8.12 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.6 MB.
 
-Unloading 87 unused Assets to reduce memory usage. Loaded Objects now: 5118.
-Total: 7.368100 ms (FindLiveObjects: 0.991200 ms CreateObjectMapping: 0.150700 ms MarkObjects: 4.230100 ms  DeleteObjects: 1.995200 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5133.
+Total: 4.120500 ms (FindLiveObjects: 0.464200 ms CreateObjectMapping: 0.122200 ms MarkObjects: 3.507400 ms  DeleteObjects: 0.025600 ms)
+
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 7.96 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.6 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5133.
+Total: 3.362300 ms (FindLiveObjects: 0.464900 ms CreateObjectMapping: 0.124000 ms MarkObjects: 2.751500 ms  DeleteObjects: 0.021200 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
