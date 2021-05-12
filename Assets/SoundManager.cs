@@ -1,15 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class SoundManager : MonoBehaviour {
-
+public class SoundManager : MonoBehaviour 
+{
+    public static SoundManager Instance;
     public float minWait, maxWait;
     GameObject Doren, SpriteA, SpriteB;
     List<GameObject> ListOfGO;
+    public Action OnGameStart;
     // Use this for initialization
     void Start()
     {
+        Instance = this;
         SpriteA = GameObject.Find("SpriteA");
         SpriteB = GameObject.Find("SpriteB");
         SpriteB.SetActive(false);
@@ -34,6 +38,7 @@ public class SoundManager : MonoBehaviour {
     }
     public void StartGame()
     {
+        OnGameStart?.Invoke();
         SpriteA.SetActive(false);
         SpriteB.SetActive(true);
         AkSoundEngine.PostEvent("BGM_Play", gameObject);
@@ -42,7 +47,7 @@ public class SoundManager : MonoBehaviour {
 
     private IEnumerator StartRandomSound()
     {
-        yield return new WaitForSeconds(Random.Range(minWait, maxWait));
+        yield return new WaitForSeconds(UnityEngine.Random.Range(minWait, maxWait));
         if(ListOfGO.Count == 0)
             yield return null;
         else
