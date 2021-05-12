@@ -114,3 +114,4 @@ Received Import Request.
   path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Android
   artifactKey: Guid(2eaa6f92e679c2244ba38d2301149744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks/Android using Guid(2eaa6f92e679c2244ba38d2301149744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593b3a5d3ebd60f8a0378bffc5fe509c') in 0.015310 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
