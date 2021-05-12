@@ -17,3 +17,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	995653654	Have_U_Ever_Been_Outside (Custom)	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
