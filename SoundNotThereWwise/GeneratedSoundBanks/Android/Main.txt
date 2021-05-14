@@ -15,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3600847130	Horn			\Default Work Unit\Horn	
 	3610450331	Blender			\Default Work Unit\Blender	
 	3917792242	Motorsav			\Default Work Unit\Motorsav	
+	3978245845	Pickup			\Default Work Unit\Pickup	
 	4018763798	Banken			\Default Work Unit\Banken	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
@@ -26,6 +27,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	74593294	BGM	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\BGM_24A0637A.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\BGM		2679179
 	195343118	Blender	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\Blender_81016DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Blender		65176
 	230968681	Ugle	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\Ugle_81016DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Ugle		27616
+	252321030	Pickup	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\Pickup_07F5D2B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Pickup		7907
 	332188677	Glimt	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\Glimt_81016DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Glimt		66394
 	348643319	Mobiltelefon	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\Mobiltelefon_81016DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Papfigurer\Mobiltelefon		22229
 	412899284	Swap	C:\UnityProjects\SoundHornVR\SoundNotThereWwise\.cache\Android\SFX\Swap_81016DC0.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Swap		78255

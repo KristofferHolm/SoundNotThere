@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="252816805">
+		<SoundBank Id="1355168291" Language="SFX" Hash="51156994">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -21,7 +21,7 @@
 				<AuxBus Id="3522109173" Name="Strand" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environmental\Reverb\Strand"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4201509455">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3620191093">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -155,6 +155,14 @@
 					<AuxBusSends>
 						<AuxBus Id="1631958101" Name="Lejlighed" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Environmental\Reverb\Lejlighed"/>
 					</AuxBusSends>
+				</Event>
+				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup" DurationType="OneShot" DurationMin="0.197370" DurationMax="0.197370">
+					<IncludedMemoryFiles>
+						<File Id="252321030" Language="SFX">
+							<ShortName>Pickup.wav</ShortName>
+							<Path>SFX\Pickup_07F5D2B0.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="286100424" Name="Swap" ObjectPath="\Events\Default Work Unit\Swap" DurationType="OneShot" DurationMin="2.936708" DurationMax="2.936708">
 					<IncludedMemoryFiles>

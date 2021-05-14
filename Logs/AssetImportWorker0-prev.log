@@ -15,12 +15,12 @@ C:/UnityProjects/SoundHornVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60714
+62093
 Successfully changed project path to: C:/UnityProjects/SoundHornVR
 C:/UnityProjects/SoundHornVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 336.27 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 1.98 ms.
+Refreshing native plugins compatible for Editor in 255.15 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 1.50 ms.
 Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/UnityProjects/SoundHornVR/Assets
@@ -37,49 +37,174 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002622 seconds.
+Registered in 0.003618 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 215.17 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
+Refreshing native plugins compatible for Editor in 197.96 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.761 seconds
+- Completed reload, in  2.496 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014450 seconds.
+Registered in 0.015318 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 216.87 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Refreshing native plugins compatible for Editor in 2.28 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 207.82 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 2.62 ms, found 6 plugins.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.60.0
 Mono: successfully reloaded assembly
-- Completed reload, in  2.879 seconds
+- Completed reload, in  2.814 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 2.16 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 5380 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 213.2 MB.
-System memory in use after: 213.6 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 2.40 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 5381 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 214.0 MB.
+System memory in use after: 214.4 MB.
 
-Unloading 256 unused Assets to reduce memory usage. Loaded Objects now: 5714.
-Total: 6.528100 ms (FindLiveObjects: 0.507900 ms CreateObjectMapping: 0.371100 ms MarkObjects: 5.330600 ms  DeleteObjects: 0.317100 ms)
+Unloading 256 unused Assets to reduce memory usage. Loaded Objects now: 5715.
+Total: 7.751100 ms (FindLiveObjects: 0.580800 ms CreateObjectMapping: 0.545200 ms MarkObjects: 6.308700 ms  DeleteObjects: 0.314700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/AkSoundEngine_Kris.cs
-  artifactKey: Guid(9a17b6c019f2aea4d8f6cbfbf8185555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AkSoundEngine_Kris.cs using Guid(9a17b6c019f2aea4d8f6cbfbf8185555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3759fa1a5d4fec2296c6a9fa05a8b737') in 0.052585 seconds 
+  path: Assets/StreamingAssets/Audio
+  artifactKey: Guid(a8ed4e0fc88f73745a0be5b87c13f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Audio using Guid(a8ed4e0fc88f73745a0be5b87c13f3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9e27ea2d04e4df8633bfccd69a59de') in 0.011032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/StreamingAssets/Audio/GeneratedSoundBanks
+  artifactKey: Guid(80a80ddd94a79be4c8fb73227b7825ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks using Guid(80a80ddd94a79be4c8fb73227b7825ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a5a16f52ced90a1c74f3dec75ab0e1') in 0.010659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 212.053507 seconds.
+  path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac
+  artifactKey: Guid(309b7ec20768feb43b50f9b6c97d72b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac using Guid(309b7ec20768feb43b50f9b6c97d72b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb07dec6de3adc4c8679484d9ea7461') in 0.008489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.594308 seconds.
+  path: Assets/StreamingAssets/desc.txt
+  artifactKey: Guid(811715aa79bdbec458157c6b634ca7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/desc.txt using Guid(811715aa79bdbec458157c6b634ca7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ce178e7695bf65bd19cd2bc1fd3910') in 0.054642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 79.682035 seconds.
+  path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows
+  artifactKey: Guid(95b383836955b6b468d0774e191fc91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows using Guid(95b383836955b6b468d0774e191fc91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c44e653849c22384f923f0085d53be') in 0.012213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1340.378816 seconds.
+  path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h
+  artifactKey: Guid(45d006d124c04f149af3a7999f3fb855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h using Guid(45d006d124c04f149af3a7999f3fb855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c945d0be7b46e8cbc2ee4d02ad5478') in 0.018302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.381950 seconds.
+  path: Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h
+  artifactKey: Guid(45d006d124c04f149af3a7999f3fb855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h using Guid(45d006d124c04f149af3a7999f3fb855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59de7fe47f700296a1cdaf719b9dffed') in 0.009696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 296.311428 seconds.
+  path: Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
+  artifactKey: Guid(e772fdf8db6cedc42878ea506aa647dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset using Guid(e772fdf8db6cedc42878ea506aa647dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44c4cba3e959bddd832536b5c31fb1d') in 0.015536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.474155 seconds.
+  path: Assets/Wwise/API/Editor/WwiseWindows/AkWwisePicker.cs
+  artifactKey: Guid(7346f1db43cbbb549806dec10dfbd741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/WwiseWindows/AkWwisePicker.cs using Guid(7346f1db43cbbb549806dec10dfbd741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015d98041be19f25d34227c375ce0dcf') in 0.014870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.317933 seconds.
+  path: Assets/Wwise/API/Editor/WwiseWindows/AkWwiseWWUBuilder.cs
+  artifactKey: Guid(7bd4f45d69ea9e5429afb9e6b8a8e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/WwiseWindows/AkWwiseWWUBuilder.cs using Guid(7bd4f45d69ea9e5429afb9e6b8a8e540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f531e9de95f944542bc9cb28764d45a1') in 0.016592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.153231 seconds.
+  path: Assets/Wwise/API/Editor/AkPluginActivator.cs
+  artifactKey: Guid(28051ebfbf21e1449b18462eeb50c503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/AkPluginActivator.cs using Guid(28051ebfbf21e1449b18462eeb50c503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1262348e93f7ef7b3e4744f0dcc7407c') in 0.013676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.050715 seconds.
+  path: Assets/Wwise/API/Editor/AK.Wwise.Unity.API.Editor.asmdef
+  artifactKey: Guid(e1c77859b4b6521439633ec1cbfd4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/AK.Wwise.Unity.API.Editor.asmdef using Guid(e1c77859b4b6521439633ec1cbfd4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cfcff2c68088d45da0897c5c34439a7') in 0.011527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.240648 seconds.
+  path: Assets/Wwise/API/Editor/AK.Wwise.Unity.API.Editor.asmdef
+  artifactKey: Guid(e1c77859b4b6521439633ec1cbfd4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/AK.Wwise.Unity.API.Editor.asmdef using Guid(e1c77859b4b6521439633ec1cbfd4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fec9f0e2145c03619689fa5647f8079') in 0.014042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.583347 seconds.
+  path: Assets/Wwise/API/Editor/AK.Wwise.Unity.API.Editor.asmdef
+  artifactKey: Guid(e1c77859b4b6521439633ec1cbfd4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/AK.Wwise.Unity.API.Editor.asmdef using Guid(e1c77859b4b6521439633ec1cbfd4781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bfdfb3616cb309e03e8dee19ba9174') in 0.004152 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015328 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.06 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Refreshing native plugins compatible for Editor in 2.14 ms, found 6 plugins.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.054 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 3.20 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5223 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 203.4 MB.
+System memory in use after: 203.8 MB.
+
+Unloading 127 unused Assets to reduce memory usage. Loaded Objects now: 5719.
+Total: 5.712900 ms (FindLiveObjects: 0.424200 ms CreateObjectMapping: 0.359800 ms MarkObjects: 4.841000 ms  DeleteObjects: 0.086700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 111.694969 seconds.
+  path: Assets/Wwise/API/Editor/WwiseMenu/Android/AkWwiseMenu_Android.cs
+  artifactKey: Guid(ad879f9ad8720394eace129dbfacb1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/WwiseMenu/Android/AkWwiseMenu_Android.cs using Guid(ad879f9ad8720394eace129dbfacb1c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbcdb9d39d7b0f223fa2265a1dd194b') in 0.019586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.564578 seconds.
+  path: Assets/Wwise/API/Editor/WwiseTypes/BankDrawer.cs
+  artifactKey: Guid(dac5756dbbb8a7042895d92ca27ee671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Wwise/API/Editor/WwiseTypes/BankDrawer.cs using Guid(dac5756dbbb8a7042895d92ca27ee671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5173c2362b09f8c1fa202fee6dba4e56') in 0.014282 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

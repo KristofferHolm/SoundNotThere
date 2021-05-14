@@ -36,7 +36,6 @@
 						<Value Platform="Windows">256</Value>
 					</ValueList>
 				</Property>
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjM1NDUiIG1hc2s9IlBJUFYzNjQzIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIxIiBuYW1lPSJNYWludGVuYW5jZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMTctMTAtMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjQzIiBuYW1lPSJBdXJvLUhlYWRwaG9uZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAxNy0xMC0zMSIgIC8+PHBsdWdpbiBpZD0iNzIwOTM4MTEiIG5hbWU9IkF1cm8tSGVhZHBob25lIiBsaWNlbnNlPSI0MyIgLz48L3Byb2plY3Q+|U2+z+OfwDVgts0F8QQ0WW73N1Jb0DvW44xLs06u1EIeeIjhHFBziMbvn2bR5ldkBAeP/xoNCGx/2N14cBj74IlQVgN+NKoCbGrGqeU6v73FUZAaUixNCYh4Z5qvtqq5H3mt253UkfxEwNQTehqbCku15zPYgYGDKni/j4+OFdmc5yhJPa35WAzl5JEwjwAg6fD354ozerJRQJXdLrNENaN8bXK5AF52nkJLSADuQ81Le1GKGB0C5VgsTfKR78cq3/+0GFSxtwNl5F5QbBQhX2+8+Hf4ob7Mw8eY3/R0SBgoslb2uOw+6enlzLeCuJWhbCj7QKXThA31aJilcdQzR0Q=="/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>

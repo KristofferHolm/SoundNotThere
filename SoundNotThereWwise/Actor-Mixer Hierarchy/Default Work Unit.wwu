@@ -579,6 +579,35 @@
 								<ActiveSource Name="Horn" ID="{2030B104-A126-4B90-BC72-FAA8DB6631D0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Pickup" ID="{43B166C0-418F-4A1C-93C1-B2F37B817A0C}" ShortID="771623628">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24374F30-20B3-48BA-A7ED-3FD29D540D01}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2067AFD7-BEED-4B6D-BBF8-E9634DC5D469}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pickup" ID="{663112D8-88C9-484C-9E86-E10069F730AB}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+										<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Pickup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="252321030"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Pickup" ID="{663112D8-88C9-484C-9E86-E10069F730AB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

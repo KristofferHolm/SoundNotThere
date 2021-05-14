@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID KOLESKAB = 947300733U;
         static const AkUniqueID MOBILTELEFON = 2861994579U;
         static const AkUniqueID MOTORSAV = 3917792242U;
+        static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID SWAP = 286100424U;
         static const AkUniqueID TOM = 1080872023U;
         static const AkUniqueID UGLE = 1456535184U;
