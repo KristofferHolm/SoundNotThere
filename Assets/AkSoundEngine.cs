@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class AkSoundEngine_Kris
+public static class AkSoundEngine
 {
     public static AudioClip GetClipFromString(string sound)
     {
