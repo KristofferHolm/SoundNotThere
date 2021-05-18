@@ -82,3 +82,4 @@ Received Import Request.
   path: Assets/VR
   artifactKey: Guid(7edc7b5a0dcf2e441b395965823f61c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/VR using Guid(7edc7b5a0dcf2e441b395965823f61c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c4878b7cd63f01a36b3c532db779ed') in 0.022606 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
