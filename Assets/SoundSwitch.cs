@@ -11,10 +11,11 @@ public class SoundSwitch : MonoBehaviour {
     Camera cam;
     bool pickedUpHorn = false;
     public string SoundBit;
+    public SoundBoard.Sound Sound = SoundBoard.Sound.Null;
     public GameObject AudioSphere;
     public AnimationCurve AC;
     public Image horn;
-    soundBoard SB;
+    SoundBoard SB;
     PlayerMove movement;
     public Sprite Horn_0, Horn_1;
     float RightClickCD = 0;
@@ -25,11 +26,18 @@ public class SoundSwitch : MonoBehaviour {
         layerMask = ~layerMask;
         cam = GetComponent<Camera>();
         movement = transform.parent.GetComponent<PlayerMove>();
-        SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
+        SB = GameObject.Find("GameManager").GetComponent<SoundBoard>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+    private void OnValidate()
+    {
+        if (Sound == SoundBoard.Sound.Null)
+        {
+            System.Enum.TryParse(SoundBit, out SoundBoard.Sound sEnum);
+            Sound= sEnum;
+        }
+    }
+    // Update is called once per frame
+    void Update () {
 
         ray.direction = transform.forward * Range;
         ray.origin = transform.position;
@@ -75,8 +83,8 @@ public class SoundSwitch : MonoBehaviour {
         if (RightClickCD > 0)
             return;
         else
-            RightClickCD = SB.GetsSoundLength(SoundBit);
-        AkSoundEngine.PostEvent(SoundBit, gameObject);
+            RightClickCD = SB.GetsSoundLength(Sound);
+        AkSoundEngine.PostEvent(Sound, gameObject);
         StartCoroutine(ChangeHorn(RightClickCD));
     }
     IEnumerator ChangeHorn(float time)
@@ -93,21 +101,21 @@ public class SoundSwitch : MonoBehaviour {
         else
             RightClickCD = 2.0f;
         StartCoroutine(ChangeHorn(2.0f));
-        AkSoundEngine.PostEvent("Swap", gameObject);
+        AkSoundEngine.PostEvent(SoundBoard.Sound.Swap, gameObject);
         //sphere from papfigur
-        StartCoroutine(AnimateAudioSphere(SH.SoundBit,hit.transform.position,transform.position + transform.forward * 0.05f, -transform.right));
+        StartCoroutine(AnimateAudioSphere(SH.SoundEnum,hit.transform.position,transform.position + transform.forward * 0.05f, -transform.right));
         //sphere from player
-        StartCoroutine(AnimateAudioSphere(SoundBit,transform.position+ transform.forward*0.05f, hit.transform.position, transform.right));
+        StartCoroutine(AnimateAudioSphere(Sound,transform.position+ transform.forward*0.05f, hit.transform.position, transform.right));
         if (SH.Completed)
             return;
-        string temp = SoundBit;
-        SoundBit = SH.SoundBit;
-        SH.SoundBit = temp;
-        if (SH.SoundBit == SH.name)
+        var temp = Sound;
+        Sound = SH.SoundEnum;
+        SH.SoundEnum = temp;
+        if (SH.SoundEnum.ToString() == SH.name)
             SH.Complete();
     }
 
-    private IEnumerator AnimateAudioSphere(string sound, Vector3 from, Vector3 to, Vector3 turn)
+    private IEnumerator AnimateAudioSphere(SoundBoard.Sound sound, Vector3 from, Vector3 to, Vector3 turn)
     {
         float t = 0;
         GameObject sphere = Instantiate<GameObject>(AudioSphere);

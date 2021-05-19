@@ -2,29 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class soundBoard : MonoBehaviour {
+public class SoundBoard : MonoBehaviour {
 
-
-    Dictionary<string, float> soundList;
-
+    public static SoundBoard Instance;
+    Dictionary<Sound, SOSound.AudioID> soundList;
+    public enum Sound
+    {
+        Null,
+        Blender,
+        Glimt,
+        Hund,
+        Kat,
+        Koleskab,
+        Mobiltelefon,
+        Motorsav,
+        Ugle,
+        Vakkeur,
+        Fro,
+        Banken,
+        Dor,
+        Horn,
+        Tom,
+        Swap
+    }
+    public SOSound SOSound;
     public string[] soundText;
     public float[] soundLength;
 	// Use this for initialization
 	void Awake () {
 
-        soundList = new Dictionary<string, float>();
-
-        for (int i = 0; i < soundText.Length; i++)
+        Instance = this;
+        soundList = new Dictionary<Sound, SOSound.AudioID>();
+        foreach (var audio in SOSound.SoundList)
         {
-            soundList.Add(soundText[i], soundLength[i]);
+            soundList.Add(audio.Sound, audio);
         }
 	}
-	public float GetsSoundLength(string key)
+	public float GetsSoundLength(Sound key)
     {
-        return soundList[key];
+        soundList.TryGetValue(key,out var sound);
+        return sound.Length;
     }
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public AudioClip GetAudioClip(Sound key)
+    {
+        soundList.TryGetValue(key, out var sound);
+        return sound.Clip;
+    }
 }

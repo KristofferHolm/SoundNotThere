@@ -41,10 +41,21 @@ public class SoundManager : MonoBehaviour
         OnGameStart?.Invoke();
         SpriteA.SetActive(false);
         SpriteB.SetActive(true);
-        AkSoundEngine.PostEvent("BGM_Play", gameObject);
+        var aS = GetComponent<AudioSource>();
+        aS.Play();
+        StartCoroutine(FadeInBGM(aS));
         StartCoroutine(StartRandomSound());
     }
-
+    private IEnumerator FadeInBGM( AudioSource audioSource)
+    {
+        audioSource.volume = 0f;
+        yield return null;
+        while (audioSource.volume < 1f)
+        {
+            audioSource.volume += 0.5f * Time.deltaTime;
+            yield return null;
+        }
+    }
     private IEnumerator StartRandomSound()
     {
         yield return new WaitForSeconds(UnityEngine.Random.Range(minWait, maxWait));
@@ -63,7 +74,8 @@ public class SoundManager : MonoBehaviour
 
     public void EndGameScenario()
     {
-        AkSoundEngine.PostEvent("BGM_Stop", gameObject);
+        //AkSoundEngine.PostEvent("BGM_Stop", gameObject);
+        GetComponent<AudioSource>().Stop();
         Doren.SetActive(true);
         Doren.GetComponent<SoundHolder>().Banken();
         Doren.tag = "PapFigur";

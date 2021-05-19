@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class SoundHolder : MonoBehaviour {
 
     float highlightCD = 0f;
+    public SoundBoard.Sound SoundEnum = SoundBoard.Sound.Null;
    // public float HighLightLookAtSeconds = 0.1f;
     bool highLighted = false;
     Vector3 originScale;
@@ -22,19 +24,28 @@ public class SoundHolder : MonoBehaviour {
     public Material MatSound, MatMute;
     public Mesh MeshSound, MeshMute;
     MeshFilter meshFilt;
-    soundBoard SB;
+    SoundBoard SB;
     MeshRenderer meshRend;
     bool DOREN = false;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    private void OnValidate()
+    {
+        if (SoundEnum == SoundBoard.Sound.Null)
+        {
+            Enum.TryParse(SoundBit, out SoundBoard.Sound sEnum);
+            SoundEnum = sEnum;
+        }
+    }
+
+    void Start () {
         if (gameObject.name == "Dor")
             DOREN = true;
         originScale = transform.localScale;
         meshRend = GetComponent<MeshRenderer>();
         meshRend.materials[matINT] = MatMute;
         meshFilt = GetComponent<MeshFilter>();
-        SB = GameObject.Find("GameManager").GetComponent<soundBoard>();
-        animationTime = SB.GetsSoundLength(SoundBit);
+        SB = GameObject.Find("GameManager").GetComponent<SoundBoard>();
+        animationTime = SB.GetsSoundLength(SoundEnum);
         EmissionAmount = 0;
         MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
         MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
@@ -88,7 +99,7 @@ public class SoundHolder : MonoBehaviour {
     private IEnumerator OpenDoor()
     {
         yield return new WaitForSeconds(2f);
-        AkSoundEngine.PostEvent("Dor", gameObject);
+        AkSoundEngine.PostEvent(SoundBoard.Sound.Dor, gameObject);
         Quaternion startRot = transform.GetChild(1).localRotation;
         Quaternion endRot = transform.GetChild(1).localRotation * Quaternion.AngleAxis(-135,Vector3.up);
         float t = 0;
@@ -110,7 +121,7 @@ public class SoundHolder : MonoBehaviour {
             fadeOut.color = col;
             yield return null;
         }
-        AkSoundEngine.PostEvent("Horn", gameObject);
+        AkSoundEngine.PostEvent(SoundBoard.Sound.Horn, gameObject);
         Image TheEnd = GameObject.Find("TheEnd").GetComponent<Image>();
         TheEnd.enabled = true;
         yield return new WaitForSeconds(3f);
@@ -121,7 +132,7 @@ public class SoundHolder : MonoBehaviour {
     {
         yield return new WaitForSeconds(5f); // 2 + 2 + 1 
         
-        AkSoundEngine.PostEvent(SoundBit, gameObject);
+        AkSoundEngine.PostEvent(SoundEnum, gameObject);
         StartCoroutine(Animate());
     }
 
@@ -130,7 +141,7 @@ public class SoundHolder : MonoBehaviour {
         if (overwrite && target == 1.0f)
         {
             yield return new WaitForSeconds(2f);
-            AkSoundEngine.PostEvent("Glimt", gameObject);
+            AkSoundEngine.PostEvent(SoundBoard.Sound.Glimt, gameObject);
         }
         else if (overwrite && target == 0.0f)
             yield return new WaitForSeconds(1.0f);
@@ -196,7 +207,7 @@ public class SoundHolder : MonoBehaviour {
         if(ready2Play)
         {
             ready2Play = false;
-            AkSoundEngine.PostEvent(SoundBit, gameObject);
+            AkSoundEngine.PostEvent(SoundEnum, gameObject);
             StartCoroutine(Animate());
         }
     }
@@ -208,12 +219,12 @@ public class SoundHolder : MonoBehaviour {
         meshFilt.mesh = MeshSound;
         
         Vector3 pos = transform.position;
-        float t = SB.GetsSoundLength(SoundBit);
+        float t = SB.GetsSoundLength(SoundEnum);
         if(!DOREN)
         {
             while(t>0)
             { // SHAKE
-                transform.position = pos + Time.deltaTime * Random.insideUnitSphere;
+                transform.position = pos + Time.deltaTime * UnityEngine.Random.insideUnitSphere;
                 t -= Time.deltaTime;
                 yield return null;
             }
@@ -236,8 +247,8 @@ public class SoundHolder : MonoBehaviour {
             yield break;
         else
         {
-            AkSoundEngine.PostEvent("Banken", gameObject);
-            yield return new WaitForSeconds(Random.Range(3, 6));
+            AkSoundEngine.PostEvent(SoundBoard.Sound.Banken, gameObject);
+            yield return new WaitForSeconds(UnityEngine.Random.Range(3, 6));
             StartCoroutine(BankeBanke());
             yield return null;
         }
