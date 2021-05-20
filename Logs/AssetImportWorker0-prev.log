@@ -1,0 +1,422 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 65460 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/UnityProjects/SoundHornVR
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52802
+Successfully changed project path to: C:/UnityProjects/SoundHornVR
+C:/UnityProjects/SoundHornVR
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 130.30 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.04 ms.
+Initialize engine version: 2021.1.7f1 (d91830b65d9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/SoundHornVR/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   27.21.14.6231
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001482 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 116.13 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.749 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003603 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 120.69 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.60.0
+Mono: successfully reloaded assembly
+- Completed reload, in  1.313 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 5009 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 201.2 MB.
+System memory in use after: 201.6 MB.
+
+Unloading 151 unused Assets to reduce memory usage. Loaded Objects now: 5425.
+Total: 3.500000 ms (FindLiveObjects: 0.553400 ms CreateObjectMapping: 0.155200 ms MarkObjects: 2.547800 ms  DeleteObjects: 0.242300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/MainScene.unity
+  artifactKey: Guid(cd55efbf05db14743ad3c9ed068532da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainScene.unity using Guid(cd55efbf05db14743ad3c9ed068532da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ada9e37a658da9e176930d9d492c3d9') in 0.014009 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004157 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.57 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.0 MB.
+System memory in use after: 188.4 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5429.
+Total: 3.637300 ms (FindLiveObjects: 0.579600 ms CreateObjectMapping: 0.148000 ms MarkObjects: 2.821800 ms  DeleteObjects: 0.087200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.439637 seconds.
+  path: Assets/SFX/Hund.wav
+  artifactKey: Guid(4d3030ab8045f554cb5b57f2180e6dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Hund.wav using Guid(4d3030ab8045f554cb5b57f2180e6dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4868d2050ada623488851d5ae872f276') in 0.105148 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004157 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.950 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.65 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 4849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.5 MB.
+System memory in use after: 191.9 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5442.
+Total: 3.624700 ms (FindLiveObjects: 0.637600 ms CreateObjectMapping: 0.151300 ms MarkObjects: 2.741300 ms  DeleteObjects: 0.093700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 205.225520 seconds.
+  path: Assets/SFX/Pickup.wav
+  artifactKey: Guid(52eaaf12573591b4ba2d846afaef0139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Pickup.wav using Guid(52eaaf12573591b4ba2d846afaef0139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a46202d152f7c16c35b9281ee3bb3e') in 0.043437 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004392 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.020 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 4849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.6 MB.
+System memory in use after: 192.0 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5447.
+Total: 3.397600 ms (FindLiveObjects: 0.617000 ms CreateObjectMapping: 0.150800 ms MarkObjects: 2.529200 ms  DeleteObjects: 0.099000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.300207 seconds.
+  path: Assets/SOSound.asset
+  artifactKey: Guid(9d3708ac8aaf33b4fab6d0ec4a85920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SOSound.asset using Guid(9d3708ac8aaf33b4fab6d0ec4a85920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b6aa8da44a670c1b7273398a819bb6') in 0.023602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.590022 seconds.
+  path: Assets/SFX/Swap.wav
+  artifactKey: Guid(1a462922cdff0eb439264ad1bbf80021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Swap.wav using Guid(1a462922cdff0eb439264ad1bbf80021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30f949ae53f031cc89805c5bae22de9') in 0.032335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.361426 seconds.
+  path: Assets/SFX/Tom.wav
+  artifactKey: Guid(e70cab37586fb024989095ec91018a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Tom.wav using Guid(e70cab37586fb024989095ec91018a98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f03e25eac175b0305b93c66c5219976') in 0.014005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.439955 seconds.
+  path: Assets/SFX/Ugle.wav
+  artifactKey: Guid(ddb4500aae8017f4693566cdba6fcead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Ugle.wav using Guid(ddb4500aae8017f4693566cdba6fcead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ecdb689dfb654e660d5b010f6ddfdfc') in 0.011503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.630971 seconds.
+  path: Assets/SFX/Vækkeur.wav
+  artifactKey: Guid(e5661e882ea1d4847babd8967da399fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Vækkeur.wav using Guid(e5661e882ea1d4847babd8967da399fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ee54d31b208320caaf617a281d0cc9') in 0.011648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.668206 seconds.
+  path: Assets/SOSound.asset
+  artifactKey: Guid(9d3708ac8aaf33b4fab6d0ec4a85920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SOSound.asset using Guid(9d3708ac8aaf33b4fab6d0ec4a85920e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df76d4571a1175270a2f885eb3c8dd8') in 0.005093 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.010 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 4849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.6 MB.
+System memory in use after: 192.0 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5452.
+Total: 3.507700 ms (FindLiveObjects: 0.566600 ms CreateObjectMapping: 0.157300 ms MarkObjects: 2.692400 ms  DeleteObjects: 0.090600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004236 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.31 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.536 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4853 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 188.9 MB.
+System memory in use after: 189.3 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5456.
+Total: 5.808100 ms (FindLiveObjects: 1.317200 ms CreateObjectMapping: 0.222900 ms MarkObjects: 4.154900 ms  DeleteObjects: 0.109200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 7.87 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.7 MB.
+System memory in use after: 94.1 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5456.
+Total: 4.311700 ms (FindLiveObjects: 0.639600 ms CreateObjectMapping: 0.157700 ms MarkObjects: 3.444400 ms  DeleteObjects: 0.069100 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 7.14 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.7 MB.
+System memory in use after: 94.1 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5456.
+Total: 3.176400 ms (FindLiveObjects: 0.528600 ms CreateObjectMapping: 0.144600 ms MarkObjects: 2.443700 ms  DeleteObjects: 0.058700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 550.687321 seconds.
+  path: Assets/SFX/Dør.wav
+  artifactKey: Guid(f3dd2d84d1dd301479f7876eaa87f255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Dør.wav using Guid(f3dd2d84d1dd301479f7876eaa87f255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f7cc8d5fcd8ea3eb063c3b413b333e') in 0.052445 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004383 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.104 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 4853 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.5 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5461.
+Total: 4.054000 ms (FindLiveObjects: 0.607400 ms CreateObjectMapping: 0.210800 ms MarkObjects: 3.164500 ms  DeleteObjects: 0.069800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 196.368800 seconds.
+  path: Assets/SFX/Swap.wav
+  artifactKey: Guid(1a462922cdff0eb439264ad1bbf80021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/Swap.wav using Guid(1a462922cdff0eb439264ad1bbf80021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddaa7f0c5dea76cecbc24a18cd5946b4') in 0.039629 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004304 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.022 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4853 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 189.1 MB.
+System memory in use after: 189.5 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 5466.
+Total: 4.249700 ms (FindLiveObjects: 0.725800 ms CreateObjectMapping: 0.152700 ms MarkObjects: 3.286100 ms  DeleteObjects: 0.083800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 10.37 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.0 MB.
+System memory in use after: 94.4 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5466.
+Total: 3.411100 ms (FindLiveObjects: 0.526900 ms CreateObjectMapping: 0.144600 ms MarkObjects: 2.665600 ms  DeleteObjects: 0.072600 ms)
+
+========================================================================
+Received Prepare
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 7.33 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.0 MB.
+System memory in use after: 94.5 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 5466.
+Total: 3.513400 ms (FindLiveObjects: 0.515700 ms CreateObjectMapping: 0.144800 ms MarkObjects: 2.778900 ms  DeleteObjects: 0.073100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
