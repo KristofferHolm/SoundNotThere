@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoundBoard : MonoBehaviour {
 
     public static SoundBoard Instance;
+    [SerializeField]
     Dictionary<Sound, SOSound.AudioID> soundList;
     public enum Sound
     {
