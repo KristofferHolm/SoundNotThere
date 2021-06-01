@@ -29,14 +29,16 @@ public class SimpleCapsuleWithStickMovement : MonoBehaviour
 	{
 		
 	}
-	
-	private void FixedUpdate()
+    private void Update()
+    {
+        if (EnableLinearMovement) StickMovement();
+        if (HMDRotatesPlayer) RotatePlayerToHMD();
+
+    }
+    private void FixedUpdate()
 	{
         if (CameraUpdated != null) CameraUpdated();
         if (PreCharacterMove != null) PreCharacterMove();
-
-        if (HMDRotatesPlayer) RotatePlayerToHMD();
-		if (EnableLinearMovement) StickMovement();
 		if (EnableRotation) SnapTurn();
 	}
 
@@ -65,8 +67,9 @@ public class SimpleCapsuleWithStickMovement : MonoBehaviour
 		Vector2 primaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 		moveDir += ort * (primaryAxis.x * Vector3.right);
 		moveDir += ort * (primaryAxis.y * Vector3.forward);
-		//_rigidbody.MovePosition(_rigidbody.transform.position + moveDir * Speed * Time.fixedDeltaTime);
-		_rigidbody.MovePosition(_rigidbody.position + moveDir * Speed * Time.fixedDeltaTime);
+        //_rigidbody.MovePosition(_rigidbody.transform.position + moveDir * Speed * Time.fixedDeltaTime);
+        transform.Translate(_rigidbody.position + moveDir * Speed * Time.deltaTime);
+        //_rigidbody.MovePosition(_rigidbody.position + moveDir * Speed * Time.fixedDeltaTime);
 	}
 
 	void SnapTurn()
