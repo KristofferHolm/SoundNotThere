@@ -14,6 +14,7 @@ public class SoundSwitcherVR : MonoBehaviour
     public SoundBoard.Sound Sound = SoundBoard.Sound.Null;
     public GameObject AudioSphere;
     public AnimationCurve AC;
+    public Material matEmission;
     SoundBoard SB;
     float RightClickCD = 0;
     LayerMask layerMask;
@@ -37,7 +38,7 @@ public class SoundSwitcherVR : MonoBehaviour
     {
         ray.direction = lazer.transform.up * Range;
         ray.origin = lazer.transform.position;
-        lazerMesh.enabled = OVRInput.Get(OVRInput.Button.Any);
+        lazerMesh.enabled = OVRInput.Get(OVRInput.RawButton.RIndexTrigger) || OVRInput.Get(OVRInput.RawButton.RHandTrigger) || OVRInput.Get(OVRInput.Button.One) || OVRInput.Get(OVRInput.Button.Two);
         if (Physics.Raycast(ray, out hit, Range, layerMask))
         {
             if (hit.collider.tag == "PapFigur")
@@ -45,11 +46,15 @@ public class SoundSwitcherVR : MonoBehaviour
                 hit.transform.GetComponent<SoundHolder>().LookedAt();
                 if (OVRInput.GetUp(OVRInput.Button.One) || OVRInput.GetUp(OVRInput.Button.Two))
                     PlaySound(hit.transform.gameObject);
-                if (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.LHandTrigger))
+                if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.RHandTrigger))
                     SwitchSound(hit.collider.GetComponent<SoundHolder>());
             }
+            else if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.RHandTrigger))
+            {
+                ListenInHand();
+            }
         }
-        else if (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.LHandTrigger))
+        else if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.RHandTrigger))
         {
             ListenInHand();
         }
@@ -66,10 +71,19 @@ public class SoundSwitcherVR : MonoBehaviour
         AkSoundEngine.PostEvent(Sound, gameObject);
         StartCoroutine(ChangeHorn(RightClickCD));
     }
-    IEnumerator ChangeHorn(float time)
+    IEnumerator ChangeHorn(float t)
     {
         //change graphic
-        yield return new WaitForSeconds(time);
+        matEmission.SetColor("_EmissionColor", Color.white * 5);
+        Vector3 pos = transform.localPosition;
+        while (t > 0)
+        { // SHAKE
+            transform.localPosition = pos + Time.deltaTime * UnityEngine.Random.insideUnitSphere;
+            t -= Time.deltaTime;
+            yield return null;
+        }
+        transform.localPosition = pos;
+        matEmission.SetColor("_EmissionColor", Color.white);
         //change back
         yield return null;
     }

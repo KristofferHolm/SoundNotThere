@@ -111,6 +111,7 @@ public class SoundHolder : MonoBehaviour {
         }
         yield return new WaitForSeconds(1.0f);
         t = 0;
+#if UNITY_STANDALONE
         Image fadeOut = GameObject.Find("FadeOut").GetComponent<Image>();
         Color col = Color.white;
         col.a = 0;
@@ -126,14 +127,20 @@ public class SoundHolder : MonoBehaviour {
         TheEnd.enabled = true;
         yield return new WaitForSeconds(3f);
         Application.Quit();
+#else
+        AkSoundEngine.PostEvent(SoundBoard.Sound.Horn, gameObject);
+        yield return new WaitForSeconds(6f);
+        Application.Quit();
+#endif
+
     }
 
     private IEnumerator CompleteAnimation()
     {
         yield return new WaitForSeconds(5f); // 2 + 2 + 1 
-        
-        AkSoundEngine.PostEvent(SoundEnum, gameObject);
-        StartCoroutine(Animate());
+        ready2Play = true;
+        //AkSoundEngine.PostEvent(SoundEnum, gameObject);
+        //StartCoroutine(Animate());
     }
 
     private IEnumerator LightUp(float target, bool overwrite) // kun til Complete();

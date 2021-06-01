@@ -22,7 +22,7 @@ public class CharacterCameraConstraint : MonoBehaviour
 	// How much overlap before fully faded.
 	private const float FADE_OVERLAP_MAXIMUM = 0.1f;
 	// Fully faded amount, which can be adjusted for debugging purposes.
-	private const float FADE_AMOUNT_MAXIMUM = 1.0f;
+	private const float FADE_AMOUNT_MAXIMUM = 0.0f;
 
 	/// <summary>
 	/// This should be a reference to the OVRCameraRig that is usually a child of the PlayerController.

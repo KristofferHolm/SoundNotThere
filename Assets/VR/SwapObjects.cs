@@ -7,7 +7,7 @@ public class SwapObjects : MonoBehaviour
     public GameObject Hand, Horn;
     public void Swap()
     {
-        Hand.SetActive(!Hand.activeSelf);
+        //Hand.SetActive(!Hand.activeSelf);
         Horn.SetActive(!Horn.activeSelf);
     }
 }
