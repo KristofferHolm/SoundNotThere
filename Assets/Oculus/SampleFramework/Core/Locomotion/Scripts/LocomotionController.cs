@@ -26,7 +26,7 @@ public class LocomotionController : MonoBehaviour
     //public CapsuleCollider CharacterController;
 	public OVRPlayerController PlayerController;
 	//public SimpleCapsuleWithStickMovement PlayerController;
-
+    
     void Start()
     {
 		/*
