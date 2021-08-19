@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnableEditor : MonoBehaviour
 {
     public bool EnableInEditor = true;
-    void Start()
+    void Awake()
     {
 
 #if UNITY_EDITOR

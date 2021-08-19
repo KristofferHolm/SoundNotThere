@@ -14,9 +14,11 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         Instance = this;
+#if UNITY_EDITOR
         SpriteA = GameObject.Find("SpriteA");
         SpriteB = GameObject.Find("SpriteB");
         SpriteB.SetActive(false);
+#endif 
         Doren = GameObject.Find("Dor");
         Doren.SetActive(false);
         ListOfGO = new List<GameObject>();
@@ -29,9 +31,11 @@ public class SoundManager : MonoBehaviour
 	}
     public void RemoveMeFromList(GameObject removeGO)
     {
-        print("hvad sker der?! " + removeGO.name);
+        //print("hvad sker der?! " + removeGO.name);
+#if UNITY_EDITOR
         if (SpriteB.activeSelf)
             SpriteB.SetActive(false);
+#endif
         ListOfGO.Remove(removeGO);
         if (ListOfGO.Count == 0)
             EndGameScenario();
@@ -39,8 +43,10 @@ public class SoundManager : MonoBehaviour
     public void StartGame()
     {
         OnGameStart?.Invoke();
+#if UNITY_EDITOR
         SpriteA.SetActive(false);
         SpriteB.SetActive(true);
+#endif
         var aS = GetComponent<AudioSource>();
         aS.Play();
         StartCoroutine(FadeInBGM(aS));

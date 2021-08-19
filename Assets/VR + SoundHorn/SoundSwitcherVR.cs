@@ -78,7 +78,7 @@ public class SoundSwitcherVR : MonoBehaviour
         Vector3 pos = transform.localPosition;
         while (t > 0)
         { // SHAKE
-            transform.localPosition = pos + Time.deltaTime * UnityEngine.Random.insideUnitSphere;
+            transform.localPosition = pos + Time.deltaTime * UnityEngine.Random.insideUnitSphere * 0.5f;
             t -= Time.deltaTime;
             yield return null;
         }

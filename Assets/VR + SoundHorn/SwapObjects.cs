@@ -13,6 +13,7 @@ public class SwapObjects : MonoBehaviour
         SoundManager.Instance.StartGame();
         HornOnTable.SetActive(false);
         gameObject.SetActive(false);
+        this.enabled = false;
     }
     public void Swap()
     {

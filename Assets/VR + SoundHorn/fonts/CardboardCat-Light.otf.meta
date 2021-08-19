@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 14d0b41e518ac23408eb371af316e922
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - CardboardCat
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d3bb577e85e8dd04cadeb88ec22ad143, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

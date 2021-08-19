@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class SoundHolder : MonoBehaviour {
 
+
+    
     float highlightCD = 0f;
     public SoundBoard.Sound SoundEnum = SoundBoard.Sound.Null;
    // public float HighLightLookAtSeconds = 0.1f;
-    bool highLighted = false;
     Vector3 originScale;
     bool ready2Play = true;
     float animationCD = 0;
@@ -27,13 +28,22 @@ public class SoundHolder : MonoBehaviour {
     SoundBoard SB;
     MeshRenderer meshRend;
     bool DOREN = false;
-    // Use this for initialization
+
+    public Outline Outliner;
+    
     private void OnValidate()
     {
         if (SoundEnum == SoundBoard.Sound.Null)
         {
             Enum.TryParse(SoundBit, out SoundBoard.Sound sEnum);
             SoundEnum = sEnum;
+        }
+        if (Outliner == null)
+        {
+            if (TryGetComponent<Outline>(out var outline))
+                Outliner = outline;
+            else
+                Outliner = gameObject.AddComponent<Outline>();
         }
     }
 
@@ -49,19 +59,21 @@ public class SoundHolder : MonoBehaviour {
         EmissionAmount = 0;
         MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
         MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+        RefreshHighlight(false);
+        AkSoundEngine.PostEvent(SoundBoard.Sound.Tom, gameObject);
+        StartCoroutine(Animate());
     }
 	// Update is called once per frame
 	void Update () {
-        if (highlightCD >= 0.0f)
+        if (highlightCD > 0.0f)
         {
             highlightCD -= Time.deltaTime;
-            if(highlightCD< 0.0f)
+            if(highlightCD < 0.0f)
             {
-                highLighted = false;
-                RefreshHighlight();
+                RefreshHighlight(false);
             }
         }
-
+       
         if (!Completed)
         {
             if (Mathf.Abs(EmissionAmount - targetEmissionAmount) > 0.01f)
@@ -87,7 +99,7 @@ public class SoundHolder : MonoBehaviour {
         }
         else
         {
-            GameObject.Find("GameManager").GetComponent<SoundManager>().RemoveMeFromList(gameObject);
+            SoundManager.Instance.RemoveMeFromList(gameObject);
             ready2Play = false;
             Completed = true;
             StartCoroutine(CompleteAnimation());
@@ -165,7 +177,6 @@ public class SoundHolder : MonoBehaviour {
                     break;
                 yield return null;
             }
-                       
         }
         else
         {
@@ -191,20 +202,23 @@ public class SoundHolder : MonoBehaviour {
 
     public void LookedAt()
     {
-        if (Completed)
-            return;
-        highLighted = true;
         highlightCD = 0.1f;
-        RefreshHighlight();
-       
+        RefreshHighlight(true);
     }
-    void RefreshHighlight()
+    void RefreshHighlight(bool highLighted)
     {
         //Insert Glow Effect
+        Outliner.ChangeWidth(highLighted);
+        if (Completed)
+            return;
         if (highLighted)
+        {
             targetEmissionAmount = 0.3f;
+        }
         else
+        {
             targetEmissionAmount = 0.0f;
+        }
     }
     public void PlaySound()
     {
@@ -255,7 +269,7 @@ public class SoundHolder : MonoBehaviour {
         else
         {
             AkSoundEngine.PostEvent(SoundBoard.Sound.Banken, gameObject);
-            yield return new WaitForSeconds(UnityEngine.Random.Range(3, 6));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(6, 12));
             StartCoroutine(BankeBanke());
             yield return null;
         }

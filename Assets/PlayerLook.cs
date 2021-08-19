@@ -14,9 +14,11 @@ public class PlayerLook : MonoBehaviour {
     float rotationX = 0F;
     float rotationY = 0F;
     Quaternion originalRotation;
+    public bool Active = true;
     void Update()
     {
-       
+        if (!Active) return;
+
             rotationX += Input.GetAxis("Mouse X") * sensitivityX;
             rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
             rotationX = ClampAngle(rotationX, minimumX, maximumX);

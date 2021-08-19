@@ -4,8 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class quit : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+
+    PlayerLook playerLook;
+    // Use this for initialization
+    void Start () {
+        var playLook = FindObjectOfType<PlayerLook>();
+        if (playLook != null)
+        {
+            playerLook = playLook; 
+        }
         GetComponent<Image>().enabled = false;
     }
     bool quitScreen = false;
@@ -14,14 +21,9 @@ public class quit : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             quitScreen = !quitScreen;
-            if(quitScreen)
-            {
-                GetComponent<Image>().enabled = true;
-            }
-            else
-            {
-                GetComponent<Image>().enabled = false;
-            }
+            GetComponent<Image>().enabled = quitScreen;
+            if(playerLook != null) 
+                playerLook.Active = !quitScreen;
         }
         if(quitScreen)
         {

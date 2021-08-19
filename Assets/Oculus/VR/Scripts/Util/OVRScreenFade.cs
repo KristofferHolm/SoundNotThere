@@ -208,7 +208,20 @@ public class OVRScreenFade : MonoBehaviour
 		SetMaterialAlpha();
 	}
 
-	/// <summary>
+    public void ChangeAlpha(float alpha)
+    {
+        Color color = fadeColor;
+        color.a = alpha;
+        isFading = color.a > 0;
+        if (fadeMaterial != null)
+        {
+            fadeMaterial.color = color;
+            fadeMaterial.renderQueue = renderQueue;
+            fadeRenderer.material = fadeMaterial;
+            fadeRenderer.enabled = isFading;
+        }
+    }
+    /// <summary>
 	/// Update material alpha. UI fade and the current fade due to fade in/out animations (or explicit control)
 	/// both affect the fade. (The max is taken)
 	/// </summary>
