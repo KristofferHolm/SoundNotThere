@@ -789,7 +789,8 @@ public class LocomotionTeleport : MonoBehaviour
 
 		characterTransform.position = destPosition;
 		characterTransform.rotation = destRotation;
-	}
+        FlyingSignManager.Instance.CloseSign("teleport");
+    }
 
 	/// <summary>
 	/// Convenience method for finding the character's position.

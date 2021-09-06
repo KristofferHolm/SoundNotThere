@@ -25,6 +25,7 @@ public class PlayerMove : MonoBehaviour {
         horn.transform.position = hornPos + Vector3.down * Screen.height/2f;
         cam = transform.GetChild(0);
         rig = GetComponent<Rigidbody>();
+
         
 	}
 

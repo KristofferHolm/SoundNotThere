@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,10 @@ public class SoundSwitch : MonoBehaviour {
     public Sprite Horn_0, Horn_1;
     float RightClickCD = 0;
     LayerMask layerMask;
+
+    Action OnHornPickup;
+
+
 	// Use this for initialization
 	void Start () {
         layerMask = LayerMask.NameToLayer("Interactable");
@@ -27,6 +32,10 @@ public class SoundSwitch : MonoBehaviour {
         cam = GetComponent<Camera>();
         movement = transform.parent.GetComponent<PlayerMove>();
         SB = GameObject.Find("GameManager").GetComponent<SoundBoard>();
+
+
+    
+
     }
     private void OnValidate()
     {
@@ -142,6 +151,7 @@ public class SoundSwitch : MonoBehaviour {
 
     private void PickHorn(GameObject go)
     {
+       
         movement.PickUpHorn();
         Destroy(go);
         pickedUpHorn = true;
