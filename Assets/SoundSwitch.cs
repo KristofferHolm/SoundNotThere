@@ -94,6 +94,7 @@ public class SoundSwitch : MonoBehaviour {
         else
             RightClickCD = SB.GetsSoundLength(Sound);
         AkSoundEngine.PostEvent(Sound, gameObject);
+        //SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(transform, transform.forward, 3, SoundGraphicEffectManager.ScaleAnimation.ListenAnimation, RightClickCD);
         StartCoroutine(ChangeHorn(RightClickCD));
     }
     IEnumerator ChangeHorn(float time)
@@ -147,6 +148,7 @@ public class SoundSwitch : MonoBehaviour {
         if (RightClickCD > 0)
             return;
         go.GetComponent<SoundHolder>().PlaySound();
+        
     }
 
     private void PickHorn(GameObject go)

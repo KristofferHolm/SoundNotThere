@@ -10,10 +10,13 @@ public class SoundManager : MonoBehaviour
     GameObject Doren, SpriteA, SpriteB;
     List<GameObject> ListOfGO;
     public Action OnGameStart;
+    private void Awake()
+    {
+        Instance = this;
+    }
     // Use this for initialization
     void Start()
     {
-        Instance = this;
 #if UNITY_EDITOR
         SpriteA = GameObject.Find("SpriteA");
         SpriteB = GameObject.Find("SpriteB");
