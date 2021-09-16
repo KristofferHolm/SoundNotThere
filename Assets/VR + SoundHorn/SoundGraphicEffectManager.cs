@@ -8,32 +8,32 @@ public class SoundGraphicEffectManager : Singleton<SoundGraphicEffectManager>
     public GameObject SoundGraphicPrefab;
     public AnimationCurve HitAnimation, ListenAnimation;
     public AnimationCurve HitDistortion, ListenDistortion;
-    public enum ScaleAnimation
+    public enum TypeOfAnimation
     {
         HitAnimation,
         ListenAnimation
     }
-        public float soundEffectLasts = 0.5f;
+    public float SoundEffectLasts = 0.5f;
     /// <summary>
     /// when 
     /// </summary>
-    public void CreateGraphicSoundEffect(Transform from, Vector3 dir, int numberOfGraphics, ScaleAnimation ani,float time)
+    public void CreateGraphicSoundEffect(Transform from, Vector3 dir, int numberOfGraphics, TypeOfAnimation ani,float time)
     {
         StartCoroutine(SequenceOfEffects(from, dir, numberOfGraphics, ani, time));
      
     }
-    IEnumerator SequenceOfEffects(Transform from, Vector3 dir, int numberOfGraphics, ScaleAnimation ani, float time)
+    IEnumerator SequenceOfEffects(Transform from, Vector3 dir, int numberOfGraphics, TypeOfAnimation ani, float time)
     {
         float fractionOfTime = time / numberOfGraphics;
         AnimationCurve scaleAnimation = ListenAnimation;
         AnimationCurve distortionAnimation = ListenAnimation;
         switch (ani)    
         {
-            case ScaleAnimation.HitAnimation:
+            case TypeOfAnimation.HitAnimation:
                 scaleAnimation = HitAnimation;
                 distortionAnimation = HitDistortion;
                 break;
-            case ScaleAnimation.ListenAnimation:
+            case TypeOfAnimation.ListenAnimation:
                 scaleAnimation = ListenAnimation;
                 distortionAnimation = ListenDistortion;
                 break; 
@@ -42,7 +42,10 @@ public class SoundGraphicEffectManager : Singleton<SoundGraphicEffectManager>
         }
         for (int i = 0; i < numberOfGraphics; i++)
         {
-            ActivateEffect(from, dir, scaleAnimation, distortionAnimation, soundEffectLasts);
+            //super hotfix
+            if (ani == TypeOfAnimation.ListenAnimation)
+                dir = from.up * dir.magnitude;
+            ActivateEffect(from, dir, scaleAnimation, distortionAnimation, SoundEffectLasts);
             yield return new WaitForSeconds(fractionOfTime);
         }
         yield return null;
@@ -53,7 +56,8 @@ public class SoundGraphicEffectManager : Singleton<SoundGraphicEffectManager>
         if (!PoolManager.Instance.GetObj("sgp", out var sgp))
             sgp = Instantiate(SoundGraphicPrefab);
         sgp.transform.position = from.position;
-        sgp.transform.rotation = from.rotation * Quaternion.Euler(90,0,0);
+        var rot = Quaternion.LookRotation((from.position + dir) - from.position, Vector3.up);
+        sgp.transform.rotation = rot * Quaternion.Euler(90f, 0f, 0f);
         sgp.GetComponent<SoundEffectBehaviour>().Activate(dir, scaleBehaviour, distortionAnimation, time, () => PoolManager.Instance.PoolObj(sgp, "sgp"));
     }
 

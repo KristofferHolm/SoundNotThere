@@ -90,7 +90,6 @@ public class SoundHolder : MonoBehaviour {
     }
     public void Complete()
     {
-        
         if (DOREN)
         {
             Completed = true;
@@ -107,6 +106,23 @@ public class SoundHolder : MonoBehaviour {
             //tag = "Untagged";
         }
     }
+    public void CompleteVR()
+    {
+        if (DOREN)
+        {
+            Completed = true;
+            StartCoroutine(LightUpVR());
+            StartCoroutine(OpenDoor());
+        }
+        else
+        {
+            SoundManager.Instance.RemoveMeFromList(gameObject);
+            ready2Play = false;
+            Completed = true;
+            StartCoroutine(LightUpVR());
+        }
+    }
+
 
     private IEnumerator OpenDoor()
     {
@@ -154,7 +170,28 @@ public class SoundHolder : MonoBehaviour {
         //AkSoundEngine.PostEvent(SoundEnum, gameObject);
         //StartCoroutine(Animate());
     }
-
+    private IEnumerator LightUpVR()
+    {
+        AkSoundEngine.PostEvent(SoundBoard.Sound.Glimt, gameObject);
+        var t = 0f;
+        while (EmissionAmount < 2)
+        {
+            t += Time.deltaTime * 1.25f;
+            EmissionAmount = 1 + t;
+            MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
+            MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.2f);
+        while (EmissionAmount > 0)
+        {
+            EmissionAmount -= Time.deltaTime * 4f;
+            MatSound.SetColor("_EmissionColor", Color.white * EmissionAmount);
+            MatMute.SetColor("_EmissionColor", Color.white * EmissionAmount);
+            yield return null;
+        }
+        ready2Play = true;
+    }
     private IEnumerator LightUp(float target, bool overwrite) // kun til Complete();
     {
         if (overwrite && target == 1.0f)

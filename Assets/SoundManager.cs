@@ -9,7 +9,9 @@ public class SoundManager : MonoBehaviour
     public float minWait, maxWait;
     GameObject Doren, SpriteA, SpriteB;
     List<GameObject> ListOfGO;
-    public Action OnGameStart;
+    public Action OnGameStart, FirstPoke, FirstSqueeze;
+
+
     private void Awake()
     {
         Instance = this;

@@ -19,7 +19,7 @@ public class findmehorn : MonoBehaviour
     private void OnDisable()
     {
         FlyingSignManager.Instance.CloseSign("pickupHorn");
-        FindObjectOfType<TooltipForControllers>().StartTooltips();
+        FindObjectOfType<TooltipForControllers>().StartTeleportTip();
     }
 
 }

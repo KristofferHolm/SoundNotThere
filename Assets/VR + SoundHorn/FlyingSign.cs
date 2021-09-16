@@ -32,9 +32,9 @@ public class FlyingSign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateRotation();
-        UpdateLineRenderer();
-        UpdatePosition();
+        UpdatePosition(); // rotate based on the cameras y rotation and offsets the sign
+       // UpdateRotation(); // rotate to look at camera
+        UpdateLineRenderer(); // update lines
     }
 
     public void Activate(Transform[] points, Transform follow, Vector3 offset, string text, float scale = 1f, bool parenting = false)
@@ -90,7 +90,9 @@ public class FlyingSign : MonoBehaviour
         {
             t -= Time.deltaTime * AnimationSpeed *2f; //double speed back
             Sign.transform.localScale = OneScale(t* scaleOfSign);
-            transform.position = followPoint.position + offset * t;
+            var rot = GetDirToLookRot();
+            transform.rotation = rot;
+            transform.position = followPoint.position + rot * offset * t;
             yield return null;
         }
         Sign.transform.localScale = OneScale(0);
@@ -106,11 +108,20 @@ public class FlyingSign : MonoBehaviour
 
     void UpdatePosition()
     {
-        //parenting
-        //transform.localPosition = offset;
-        //else
+        var rot = GetDirToLookRot();
+        transform.rotation = rot;
         if(!animating)
-            transform.position = followPoint.position + offset;
+            transform.position = followPoint.position + rot * offset;
+    }
+    Quaternion GetDirToLookRot()
+    {
+        Vector3 pos = transform.position;
+        pos.y = 0;
+        Vector3 camPos = cam.position;
+        camPos.y = 0;
+        Vector3 dirToLookAt = camPos - pos;
+        return Quaternion.LookRotation(-dirToLookAt);
+        
     }
     void UpdateLineRenderer()
     {
@@ -134,6 +145,17 @@ public class FlyingSign : MonoBehaviour
 
     void UpdateRotation()
     {
+        // lets try only rotate in the x axis
+        Vector3 pos = transform.position;
+       // pos.z = 0;
+       // pos.x = 0;
+        Vector3 camPos = cam.position;
+       // camPos.z = 0;
+        //camPos.x = 0;
+        //Vector3 dirToLookAt = camPos - pos;
+        Quaternion rot = Quaternion.LookRotation(camPos - pos);
+        transform.rotation = rot;
+        return;
         var point = transform.position * 2.0f - cam.position;
         transform.LookAt(point);
     }

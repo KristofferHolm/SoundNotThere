@@ -22,6 +22,8 @@ public class SoundSwitcherVR : MonoBehaviour
     LayerMask layerMask;
     bool cantAct = false;
     float delayOfSwap = .25f;
+    public LocomotionTeleport LocomotionTeleport;
+    public OVRPlayerController OVRPlayerController;
 
     void Start()
     {
@@ -54,7 +56,7 @@ public class SoundSwitcherVR : MonoBehaviour
                 if (OVRInput.GetUp(OVRInput.Button.One) || OVRInput.GetUp(OVRInput.Button.Two))
                     PlaySound(hit.transform.gameObject);
                 if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.RHandTrigger))
-                    SwitchSound(hit.collider.GetComponent<SoundHolder>());
+                    SwitchSound(hit.collider.GetComponent<SoundHolder>(),hit.distance);
             }
             else if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.RHandTrigger))
             {
@@ -71,37 +73,40 @@ public class SoundSwitcherVR : MonoBehaviour
 
     void SoundEffectNoHit(float time)
     {
-        int numberofwaves = (int)(time * 10f);
-        SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(lazer.transform, lazer.transform.up * Range, numberofwaves, SoundGraphicEffectManager.ScaleAnimation.ListenAnimation, time);
+        int numberofwaves = (int)(time * 20f);
+        SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(lazer.transform, lazer.transform.up * Range, numberofwaves, SoundGraphicEffectManager.TypeOfAnimation.ListenAnimation, time);
     }
-    void SoundEffectHit(SoundHolder SH, float introTime,float OutroTime, float delayTime, Action callback)
+    void SoundEffectHit(SoundHolder SH,float dist, float introTime,float OutroTime, float delayTime, Action callback)
     {
-        SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(lazer.transform, lazer.transform.up * Range, (int)(introTime * 10f), SoundGraphicEffectManager.ScaleAnimation.ListenAnimation, introTime);
+        SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(lazer.transform, lazer.transform.up * dist, (int)(introTime * 10f), SoundGraphicEffectManager.TypeOfAnimation.HitAnimation, introTime);
         AkSoundEngine.PostEvent(Sound, gameObject);
 
-        StartCoroutine(SoundEffectHitSequence(delayTime, OutroTime,SH, callback));
+        StartCoroutine(SoundEffectHitSequence(introTime, delayTime, OutroTime,SH, callback));
     }
-    IEnumerator SoundEffectHitSequence(float delay,float outro,SoundHolder SH, Action callback)
+    IEnumerator SoundEffectHitSequence(float intro, float delay,float outro,SoundHolder SH, Action callback)
     {
+        yield return new WaitForSeconds(intro);
         yield return new WaitForSeconds(delay);
-        SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(lazer.transform, lazer.transform.up * Range, (int)(outro * 10f), SoundGraphicEffectManager.ScaleAnimation.ListenAnimation, outro);
-        AkSoundEngine.PostEvent(SH.SoundEnum, SH.gameObject);
-        yield return new WaitForSeconds(outro);
+        SoundGraphicEffectManager.Instance.CreateGraphicSoundEffect(SH.transform, transform.position - SH.transform.position, (int)(outro * 10f), SoundGraphicEffectManager.TypeOfAnimation.HitAnimation, outro);
+        //AkSoundEngine.PostEvent(SH.SoundEnum, SH.gameObject);
+        SH.PlaySound();
+        yield return new WaitForSeconds(outro + SoundGraphicEffectManager.Instance.SoundEffectLasts);
         callback.Invoke();
     }
 
     private void ListenInHand()
     {
+        SoundManager.Instance.FirstSqueeze?.Invoke();
         if (RightClickCD > 0)
             return;
         else
             RightClickCD = SB.GetsSoundLength(Sound);
         SoundEffectNoHit(SB.GetsSoundLength(Sound));
         AkSoundEngine.PostEvent(Sound, gameObject);
-        StartCoroutine(ChangeHorn(RightClickCD));
+        StartCoroutine(ShakeHorn(RightClickCD));
     }
 
-    IEnumerator ChangeHorn(float t)
+    IEnumerator ShakeHorn(float t)
     {
         //change graphic
         matEmission.SetColor("_EmissionColor", Color.white * 5);
@@ -118,28 +123,27 @@ public class SoundSwitcherVR : MonoBehaviour
         //change back
         yield return null;
     }
-    private void SwitchSound(SoundHolder SH)
+    private void SwitchSound(SoundHolder SH, float dist)
     {
+        SoundManager.Instance.FirstSqueeze?.Invoke();
         if (RightClickCD > 0 || SH.Completed)
             return;
         float swapTime = SB.GetsSoundLength(Sound) + SB.GetsSoundLength(SH.SoundEnum) + delayOfSwap;
-        RightClickCD = swapTime;
         LockPlayer(true);
-        SoundEffectHit(SH, SB.GetsSoundLength(Sound), SB.GetsSoundLength(SH.SoundEnum), delayOfSwap, ()=> LockPlayer(false));
-        StartCoroutine(ChangeHorn(SB.GetsSoundLength(Sound)));
+        StartCoroutine(ShakeHorn(SB.GetsSoundLength(Sound)));
         AkSoundEngine.PostEvent(SoundBoard.Sound.Swap, gameObject);
-        
-        ////sphere from papfigur
-        //StartCoroutine(AnimateAudioSphere(SH.SoundEnum, hit.transform.position, transform.position + transform.forward * 0.05f, -transform.right));
-        ////sphere from player
-        //StartCoroutine(AnimateAudioSphere(Sound, transform.position + transform.forward * 0.05f, hit.transform.position, transform.right));
-        if (SH.Completed)
-            return;
-        var temp = Sound;
-        Sound = SH.SoundEnum;
-        SH.SoundEnum = temp;
-        if (SH.SoundEnum.ToString() == SH.name)
-            SH.Complete();
+        SoundEffectHit(SH, dist, SB.GetsSoundLength(Sound), SB.GetsSoundLength(SH.SoundEnum), delayOfSwap, ()=>
+        {
+            LockPlayer(false);
+
+            if (SH.Completed)
+                return;
+            var temp = Sound;
+            Sound = SH.SoundEnum;
+            SH.SoundEnum = temp;
+            if (SH.SoundEnum.ToString() == SH.name)
+                SH.CompleteVR();
+        });
     }
     Transform parent;
     private void LockPlayer(bool locked)
@@ -151,6 +155,8 @@ public class SoundSwitcherVR : MonoBehaviour
         {
             transform.parent = null;
             cantAct = true;
+            LocomotionTeleport.EnableTeleportation(false);
+            OVRPlayerController.SetHaltUpdateMovement(true);
         }
         else
             StartCoroutine(MoveTowardsParent());
@@ -159,39 +165,30 @@ public class SoundSwitcherVR : MonoBehaviour
 
     IEnumerator MoveTowardsParent()
     {
-        while (Vector3.Distance(transform.position, parent.position) > 0.5f)
+        var t = 0f;
+        Vector3 startPos = transform.position;
+        Quaternion startRot = transform.rotation;
+        while (t < 1f)
         {
-            Vector3.MoveTowards(transform.position, parent.position, Time.deltaTime);
+            t += Time.deltaTime * 1.66f;
+            transform.position = Vector3.Lerp(startPos, parent.position, t);
+            transform.rotation = Quaternion.Lerp(startRot, parent.rotation, t);
             yield return null;
         }
         transform.parent = parent;
-        transform.position = Vector3.zero;
-        transform.rotation = Quaternion.identity;
+        transform.localPosition= Vector3.zero;
+        transform.localRotation = Quaternion.identity;
         transform.localScale = Vector3.one;
         cantAct = false;
-    }
-
-    private IEnumerator AnimateAudioSphere(SoundBoard.Sound sound, Vector3 from, Vector3 to, Vector3 turn)
-    {
-        float t = 0;
-        GameObject sphere = Instantiate<GameObject>(AudioSphere);
-        AkSoundEngine.PostEvent(sound, sphere);
-        sphere.transform.position = transform.position;
-        while (t < 1f)
-        {
-
-            t += Time.deltaTime / 2.0f; // så det tager 2 sekunder
-            sphere.transform.position = Vector3.Lerp(from, to, t) + turn * AC.Evaluate(t); ;
-            yield return null;
-        }
-        Destroy(sphere);
-        yield return null;
+        LocomotionTeleport.EnableTeleportation(true);
+        OVRPlayerController.SetHaltUpdateMovement(false);
     }
     private void PlaySound(GameObject go)
     {
         if (RightClickCD > 0)
             return;
         go.GetComponent<SoundHolder>().PlaySound();
+        SoundManager.Instance.FirstPoke?.Invoke();
     }
 
 }
